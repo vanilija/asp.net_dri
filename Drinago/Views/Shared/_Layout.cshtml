@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/modernizr") 
+
     <script type="text/javascript">
         var appInsights=window.appInsights||function(config){
             function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
@@ -22,9 +23,11 @@
         window.appInsights=appInsights;
         appInsights.trackPageView();
     </script>
+
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 </head>
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -43,17 +46,14 @@
                     <!--<li>@Html.ActionLink("Things to do", "Transportation", "Home")</li>-->
                     <li>@Html.ActionLink("Food & Drink", "FoodAndDrink", "Home")</li>
                     <li>@Html.ActionLink("Lodging", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Maps & Guides", "Home", "Home")</li>
+                    <!--<li>@Html.ActionLink("Maps & Guides", "Home", "Home")</li>-->
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    
-                </ul>
-
+                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
-
 
         @RenderBody()
 
@@ -92,13 +92,12 @@
         </footer>
     </div>
 
-
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 
     <!--Import jQuery before materialize.js-->
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
