@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "About Drinago";
+
+}
+<div class="jumbotron-3">
+
+    <!--<h2 class="About" align="center">@ViewBag.Title</h2>-->
+    <h1 class="food" align="center">FOOD & DRINK</h1>
+   
+    <style>
+
+       .food {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.food:before, .food:after {
+  background-color: #ddd;
+  content: '\a0';
+  flex-grow: 1;
+  height: 5px;
+  position: relative;
+  top: 0.5em;
+}
+.food:before {
+  margin-right:10px;
+}
+.food:after {
+  margin-left:10px;
+}
+</style>
+</div>
+
+<style>
+    .jumbotron-3 {
+        background:url(http://www.freewebheaders.com/wordpress/wp-content/gallery/food/food-dishes-header.jpg);
+            padding-top: 200px;
+            padding-bottom: 100px;
+            background-size: cover;
+            
+    }
+    .About {
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+</style>
+
+<!-- Editor's Notice-->
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel white lighten-5 z-depth-1">
+        <h3>@ViewBag.Message</h3>
+        <p align="justify">This is an early aplha stage of the website. We have chosen to build our website using ASP.NET MVC. Please, any errors you may encounter, let me know at: test@test.com, thanks!
+        This website uses bootstrap framework, which means that it's responsive out of the box, so you can use it on any device you want. This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. Point of the website is to introduce tourists to the town of Gorazde, people of Gorazde, culture of Gorazde and so forth.
+        </p>
+    </div>
+</div>
+<br />
+

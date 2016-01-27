@@ -238,13 +238,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\GeneralInfo.cshtml" />
+    <Content Include="Views\Home\Info.cshtml" />
     <Content Include="Views\Home\GettingAround.cshtml" />
     <Content Include="Views\Home\Maps.cshtml" />
     <Content Include="Views\Home\SportsAndRecreations.cshtml" />
     <Content Include="Views\Home\Tours.cshtml" />
     <Content Include="Views\Home\Transportation.cshtml" />
     <Content Include="Views\Home\WhereTo.cshtml" />
+    <Content Include="Views\Home\FoodAndDrink.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

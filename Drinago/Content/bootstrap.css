@@ -18,7 +18,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: -40px;
 }
 article,
 aside,
@@ -7524,21 +7524,3 @@ input[type="checkbox"]:disabled:checked:after,
 
 /*Moj kod*/
 
-.jumbotron-prvaslika {
-    /* add bootstrap jumbotron background image */
-    background: url("http://i.imgur.com/SkoY75s.jpg");
-    /* change bootstrap jumbotron text color */
-    background-size:  cover;
-    padding-top: 100px;
-    padding-bottom: 200px;
-   
-}
-
-.jumbotron-2 {
-    /* add bootstrap jumbotron background image */
-    background: url("http://i.imgur.com/G88mnUW.jpg");
-    /* change bootstrap jumbotron text color */
-    background-size:  cover;
-    padding-top: 100px;
-    padding-bottom: 200px;
-}

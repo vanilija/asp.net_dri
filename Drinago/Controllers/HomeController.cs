@@ -16,7 +16,6 @@ namespace Drinago.Controllers
         public ActionResult About()
         {
 
-
             return View();
         }
 
@@ -26,7 +25,7 @@ namespace Drinago.Controllers
 
             return View();
         }
-        public ActionResult GeneralInfo()
+        public ActionResult Info()
         {
             return View();
         }
@@ -40,5 +39,12 @@ namespace Drinago.Controllers
         {
             return View();
         }
+
+        public ActionResult FoodAndDrink()
+        {
+            ViewBag.Message = "Food and Drink";
+            return View();
+        }
+
     }
 }
