@@ -1,0 +1,242 @@
+﻿<!--@{
+    ViewBag.Title = "Transportation Info";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>-->
+
+<div class="jumbotron card-panel grey lighten-5 z-depth-1">
+
+    <h2 class="info" align="center">@ViewBag.Title</h2>
+</div>
+<style>
+    .info {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Travel by Airplane -->
+    <div class="card-panel white lighten-5 z-depth-1">
+        <h3 align="center">Travel by Airplane</h3>
+        <h4>Time to travel by airplane</h4>
+        <p><b>Short haul (3 hours)</b></p>
+        <p><b>Medium haul (3-6 hours)</b></p>
+        <p><b>Long haul (>6 hours)</b></p>
+        <p><b>Ultra long haul (>12 hours)</b></p>
+
+        <p>In the map below, we have set up destionation path from Gorazde, to Sarajevo. Please, click on the red circles for more informations about the paths.</p>
+        <style>
+            .embed-container {
+                position: relative;
+                padding-bottom: 80%;
+                height: 0;
+                max-width: 100%;
+            }
+
+                .embed-container iframe, .embed-container object, .embed-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+            small {
+                position: absolute;
+                z-index: 40;
+                bottom: 0;
+                margin-bottom: -15px;
+            }
+        </style><div class="embed-container"><iframe width="100" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Test za ASP.NET" src="http://blahoblaho.maps.arcgis.com/apps/Embed/index.html?webmap=dac31f4927dd42a0853d5252a524dbb2&amp;extent=17.9939,43.5954,19.304,43.9924&amp;home=true&amp;zoom=true&amp;scale=true&amp;details=true&amp;legend=true&amp;active_panel=legend&amp;disable_scroll=true&amp;theme=light"></iframe></div>
+    </div>
+
+
+<div class="jumbotron card-panelkblue lighten-5 z-depth-1">
+    <div class="table-responsive">
+        <h5 align="center">Time required to travel from certain destinations</h5>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Destination from</th>
+                    <th>Destination to</th>
+                    <th>km</th>
+                    <th>Time (minutes)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zurich</td>
+                    <td>Sarajevo</td>
+                    <td>862</td>
+                    <td>1 h 45 m</td>
+                </tr>
+                <tr>
+                    <td>Vienna</td>
+                    <td>Sarajevo</td>
+                    <td>536</td>
+                    <td>1 h 20 m</td>
+                </tr>
+                <tr>
+                    <td>Istanbul</td>
+                    <td>Sarajevo</td>
+                    <td>893</td>
+                    <td>1 h 55 m</td>
+                <tr>
+                    <td>Dubai</td>
+                    <td>Sarajevo</td>
+                    <td>3911</td>
+                    <td>6 h 15 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <!-- End of travel by airplane -->
+
+
+    <!-- Travel by Rail -->
+    <div class="card-panel white lighten-5 z-depth-1">
+        <h4 align="center">Travel by Rail</h4>
+        <p>
+            The nearest railway station in Bosnia and Herzegovina is in the capital city (Sarajevo).
+
+            Distance between Gorazde and Sarajevo is 105 km'.
+
+            On the map below, click on the <b>red marker</b> to see more information about railway station located in Sarajevo.
+        </p>
+
+        <!-- Mapa -->
+
+        <iframe class="mapa_rail" src="https://www.google.com/maps/d/embed?mid=zYnnE4Fq5m2A.kDSt6Il6ezyo"></iframe>
+
+        <style>
+            .mapa_rail {
+                width: 100%;
+                height: 400px;
+            }
+        </style>
+
+        <!-- Kraj mape-->
+
+        <p><a class="btn btn-default" href="https://drinago10.firebaseapp.com/">Learn more &raquo;</a></p>
+    </div>
+
+<div class="jumbotron card-panelkblue lighten-5 z-depth-1">
+    <div class="table-responsive">
+        <h5 align="center">Time required to travel from certain destinations</h5>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Destination from</th>
+                    <th>Destination to</th>
+                    <th>km</th>
+                    <th>Time (minutes)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zurich</td>
+                    <td>Sarajevo</td>
+                    <td>862</td>
+                    <td>1 h 45 m</td>
+                </tr>
+                <tr>
+                    <td>Vienna</td>
+                    <td>Sarajevo</td>
+                    <td>536</td>
+                    <td>1 h 20 m</td>
+                </tr>
+                <tr>
+                    <td>Istanbul</td>
+                    <td>Sarajevo</td>
+                    <td>893</td>
+                    <td>1 h 55 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <!-- End of travel by Rail code -->
+
+    <!-- Travel by Car -->
+    <div class="card-panel white lighten-5 z-depth-1">
+        <h4 align="center">Travel by car.</h4>
+        <p>
+            If you planned to rent a car (where to rent a car)Take a cab/taxi from
+            Sarajevo to getting destination Drinago.
+        </p>
+        <p>
+            If you use your private car to come in
+            destination Drinago the best route is to come via Sokolac-Rogatica-Ustiprača.
+        </p>
+        <p>
+            We sugesting that you fill your tank fully.
+        </p>
+
+        <!-- Mapa -->
+
+        <iframe class="mapa_car" src="https://www.google.com/maps/d/embed?mid=zYnnE4Fq5m2A.k0a-0tyW_rFo"></iframe>
+        <style>
+            .mapa_car {
+                width: 100%;
+                height: 400px;
+            }
+        </style>
+
+        <!-- Kraj mape-->
+
+        <p><a class="btn btn-default" href="https://drinago10.firebaseapp.com/">Learn more &raquo;</a></p>
+    </div>
+
+    <!-- End of travel by Car code -->
+
+    <!-- Travel by Bus -->
+
+    <div class="card-panel white lighten-5 z-depth-1">
+        <h4 align="center">Travel by Bus</h4>
+        <p><a class="btn btn-default" href="https://drinago10.firebaseapp.com/">Learn more &raquo;</a></p>
+    </div>
+
+<div class="jumbotron card-panelkblue lighten-5 z-depth-1">
+    <div class="table-responsive">
+        <h5 align="center">Time required to travel from certain destinations</h5>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Destination from</th>
+                    <th>Destination to</th>
+                    <th>km</th>
+                    <th>Time (minutes)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zurich</td>
+                    <td>Sarajevo</td>
+                    <td>862</td>
+                    <td>1 h 45 m</td>
+                </tr>
+                <tr>
+                    <td>Vienna</td>
+                    <td>Sarajevo</td>
+                    <td>536</td>
+                    <td>1 h 20 m</td>
+                </tr>
+                <tr>
+                    <td>Istanbul</td>
+                    <td>Sarajevo</td>
+                    <td>893</td>
+                    <td>1 h 55 m</td>
+                <tr>
+                    <td>Dubai</td>
+                    <td>Sarajevo</td>
+                    <td>3911</td>
+                    <td>6 h 15 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <!-- End of travel by Bus code-->
+
