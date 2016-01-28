@@ -56,11 +56,11 @@
     <div class="container body-content">
 
         @RenderBody()
-
-        <footer class="page-footer">
+        <hr />
+        <!--<footer class="page-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col l6 s12">
+                    <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">Explore</h5>
                        <ul>
                            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Welcome</a></li>
@@ -89,8 +89,24 @@
                     © Drinago 2016
                 </div>
             </div>
-        </footer>
+        </footer>-->
     </div>
+    <footer class="footer1">
+
+
+    </footer>
+    
+    <style>
+    .footer1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position:relative;
+    margin: 0 0 100px;
+    background-color: red;
+    }
+    </style>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
