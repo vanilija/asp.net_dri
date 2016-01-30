@@ -2,7 +2,11 @@
     ViewBag.Title = "About Drinago";
 
 }
-<div class="jumbotron card-panel grey lighten-5 z-depth-1">
+
+
+
+
+<div class="jumbotron">
     <h2 class="About" align="center">@ViewBag.Title</h2>
 </div>
 <style>
@@ -11,21 +15,24 @@
         margin-bottom: 20px;
     }
 </style>
-<!-- Editor's Notice-->
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="card-panel white lighten-5 z-depth-1">
+<!-- ========== Editor's Notice ========== -->
+<hr />
+<div class="section1">
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
         <h3>@ViewBag.Message</h3>
         <p align="justify">
-            This is an early aplha stage of the website. We have chosen to build our website using ASP.NET MVC. Please, any errors you may encounter, let me know at: test@test.com, thanks!
+            This is an early alpha stage of the website. We have chosen to build our website using ASP.NET MVC. Please, any errors you may encounter, let me know at: test@test.com, thanks!
             This website uses bootstrap framework, which means that it's responsive out of the box, so you can use it on any device you want. This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. Point of the website is to introduce tourists to the town of Gorazde, people of Gorazde, culture of Gorazde and so forth.
         </p>
     </div>
-</div>
-<br />
-<!-- Our vision-->
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="card-panel white lighten-5 z-depth-1">
-        <h3>Our vision</h3>
+    </div>
+<hr>
+
+    <!-- ========== Our vision ========== -->
+
+<div class="section2">
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <h3>@ViewBag.Message2</h3>
         <p align="justify">
             This website was created with focus on introducing the potential which whom this region is rich. Drinago is a team who is always watching top trends in the world, which is really important. It promotes seasonal and out of season information into the world. Mainly informs curious possible visitors to Gorazde about nature potential, clean air, suitable climate, preservation of environment, forests and mountains scope, flora and fauna richness.
         </p>
@@ -34,11 +41,14 @@
         </p>
     </div>
 </div>
-<br />
-<!-- Team behind the project -->
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="card-panel white lighten-5 z-depth-1">
-        <h3>Team behind the project</h3>
+
+<hr />
+
+    <!-- ========== Team behind the project ========== -->
+
+<div class="section3">
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <h3>@ViewBag.Message3</h3>
         <p align="justify">
             This website was created with focus on introducing the potential which whom this region is rich. Drinago is a team who is always watching top trends in the world, which is really important. It promotes seasonal and out of season information into the world. Mainly informs curious possible visitors to Gorazde about nature potential, clean air, suitable climate, preservation of environment, forests and mountains scope, flora and fauna richness.
         </p>
@@ -47,16 +57,21 @@
         </p>
     </div>
 </div>
-<br />
-<!-- Changelog -->
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="card-panel white lighten-5 z-depth-1">
-        <h3>Changelog</h3>
-        <p align="justify">
-            This website was created with focus on introducing the potential which whom this region is rich. Drinago is a team who is always watching top trends in the world, which is really important. It promotes seasonal and out of season information into the world. Mainly informs curious possible visitors to Gorazde about nature potential, clean air, suitable climate, preservation of environment, forests and mountains scope, flora and fauna richness.
-        </p>
-        <p>
-            In the first plan, purpose of this website is to introduce nature and cultural heritage of Bosnia and Herzegovina region to tourists.
-        </p>
-    </div>
-</div>
+
+<style>
+
+
+
+    .section1, 
+    .section2, 
+    .section3 {
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        border-radius: 3px;
+    }
+   
+</style>

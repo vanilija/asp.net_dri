@@ -1,20 +1,10 @@
 ﻿@{
-    ViewBag.Title = "About Drinago";
+    ViewBag.Title = "Food and Drink";
 
 }
 
-
-
 <header class="h">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <!--<ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>-->
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img class="responsive-img" src="http://i.imgur.com/R8Xyf8p.jpg" alt="Chania">
@@ -35,98 +25,66 @@
     </div>
 </header>
 
-<style>
-    .h {
-        padding-top: 100px;
-        padding-bottom: 0px;
-    }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-<!--<div class="jumbotron-3">
-
-    <h2 class="About" align="center">@ViewBag.Title</h2>
-    <h1 class="food">FOOD & DRINK</h1>
-    <p class="fancy"><span>Food</span></p>
-    <div class="content">
-        <p>Ovo je samo test</p>
-
-    </div>
-</div>-->
-<!--<div class="page-header">
-    <img class="slider" src="http://www.freewebheaders.com/wordpress/wp-content/gallery/food/food-dishes-header.jpg" alt="Food picture" />
-</div>-->
-<!--<style>
-    .food {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background: url(http://s.cdpn.io/3/blurry-blue.jpg);
-        background-size: cover;
-        color: white;
-        font-size: 3.5em;
-        text-align: center;
-    }
-
-    .fancy {
-        margin: 0 0 2em 0;
-        text-align: center;
-        color: white;
-        font-size: 1em;
-    }
-
-</style>-->
-<!--.food {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-.food:before, .food:after {
-  background-color: #ddd;
-  content: '\a0';
-  flex-grow: 1;
-  height: 5px;
-  position: relative;
-  top: 0.5em;
-}
-.food:before {
-  margin-right:10px;
-}
-.food:after {
-  margin-left:10px;
-}-->
-<!--<style>
-    .jumbotron-3 {
-        background: url(http://www.freewebheaders.com/wordpress/wp-content/gallery/food/food-dishes-header.jpg);
-        padding-top: 200px;
-        padding-bottom: 100px;
-        background-size: cover;
-    }
-
-    .About {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-</style>-->
-<!-- Editor's Notice-->
-
 <div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="card-panel white lighten-5 z-depth-1">
+    <div class="sadrzaj">
         <h3>@ViewBag.Message</h3>
         <p align="justify">
-            This is an early aplha stage of the website. We have chosen to build our website using ASP.NET MVC. Please, any errors you may encounter, let me know at: test@test.com, thanks!
-            This website uses bootstrap framework, which means that it's responsive out of the box, so you can use it on any device you want. This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. Point of the website is to introduce tourists to the town of Gorazde, people of Gorazde, culture of Gorazde and so forth.
+            Here we need to include all of the restaurants, local caffee shops, our best picks where to drink and eat.
         </p>
     </div>
 </div>
+
 <br />
 
+<section id="FoodAndDrink">
+    <div class="row">
+        <div class="col-md-4">
+            <h4 align="center">@ViewBag.Message1</h4>
+            <p align="justify">
+                <img class="img-responsive center-block" src="http://mw2.google.com/mw-panoramio/photos/medium/40860307.jpg" />
+                Add little information about this place.
+            </p>
+            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+        </div>
+
+        <div class="col-md-4">
+            <h4 align="center">@ViewBag.Message2</h4>
+            <img class="img-responsive center-block" src="http://hotel-navigator.ba/images/hoteli/630_400/casablanca_gora_1376426063.jpg" />
+            <p align="justify">Add a little information about this place.</p>
+            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+        </div>
+
+        <div class="col-md-4">
+            <h4 align="center">@ViewBag.Message3</h4>
+            <img class="img-responsive center-block" src="https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11266617_1480812462215956_1283968584_n.jpg" />
+            <p align="justify">Add a little information about this place.\.</p>
+            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+    <!-- ========== END OF ROW ONE ========== -->
+    <!-- ========== ROW TWO ========== -->
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card-panel white lighten-5 z-depth-1">
+                <h4 align="center">@ViewBag.Message4</h4>
+                <img class="img-responsive center-block" src="https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11659358_865613526819427_7026179044602191014_n.jpg?oh=4d7963a0d284f462156d79b7906942d8&oe=572B7E37" />
+                <p align="justify">Add a little information about this place.</p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-panel white lighten-5 z-depth-1">
+                <h4 align="center">@ViewBag.Message5</h4>
+                <img class="img-responsive center-block" src="http://www.indeks.ba/core/tmp/upload/images/gorazde_02_04__022.jpg" />
+                <p align="justify">Add a little information about this place.</p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========== END OF FOOD AND DRINK SECTION ========== -->

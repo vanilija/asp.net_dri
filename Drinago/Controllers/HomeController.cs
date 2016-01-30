@@ -10,12 +10,19 @@ namespace Drinago.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Basic Info";
+            ViewBag.Message2 = "Topographical position";
+            ViewBag.Message3 = "Area of Gorazde";
+            ViewBag.Message4 = "Ethnicity and Religion";
+            ViewBag.Message5 = "Climate, electricity, water supply, currency";
             return View();
         }
 
         public ActionResult About()
         {
-
+            ViewBag.Message = "Editors Notice";
+            ViewBag.Message2 = "Our Vision";
+            ViewBag.Message3 = "Team behind the project";
             return View();
         }
 
@@ -27,6 +34,7 @@ namespace Drinago.Controllers
         }
         public ActionResult Info()
         {
+            ViewBag.Message = "Additional Information";
             return View();
         }
 
@@ -43,6 +51,13 @@ namespace Drinago.Controllers
         public ActionResult FoodAndDrink()
         {
             ViewBag.Message = "Food and Drink";
+            ViewBag.Message1 = "Hotel Behar";
+            ViewBag.Message2 = "Casablanca";
+            ViewBag.Message3 = "Monza 2";
+            ViewBag.Message4 = "Zute Dunje";
+            ViewBag.Message5 = "Ciro";
+            ViewBag.Message6 = "";
+
             return View();
         }
 
