@@ -8,12 +8,15 @@
     padding-right: 1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 body {
     background-color: #E3F2FD;
-    font-family: Helvetica, "Times New Roman", Times, serif;
-    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 11px;
+
 }
 
 .img-responsive,
@@ -37,34 +40,38 @@ Image credits: unsplash.com
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
+
 .fade-carousel {
     position: relative;
-    height: 60vh;
+    height: 50vh;
 }
 
     .fade-carousel .carousel-inner .item {
-        height: 60vh;
+        height: 50vh;
     }
 
     .fade-carousel .carousel-indicators > li {
-        margin: 0 2px;
+        margin: 0 5px;
         background-color: #f39c12;
         border-color: #f39c12;
         opacity: .7;
+        margin-bottom: 1px;
     }
 
         .fade-carousel .carousel-indicators > li.active {
             width: 12px;
             height: 12px;
             opacity: 1;
+            margin-bottom: 1px;
         }
 
 /********************************/
-/*          Hero Headers        */
+/*           Headers        */
 /********************************/
-.hero {
+
+.slider {
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     z-index: 3;
     color: #fff;
@@ -78,16 +85,20 @@ Image credits: unsplash.com
     transform: translate3d(-50%,-50%,0);
 }
 
-    .hero h1 {
-        font-weight: bold;
+    .slider h1 {
+        font-weight: 400;
         margin: 0px;
         padding-top: 0px;
+        color: black;
+        font-size: 70px;
+    }
+
+    .slider h3 {
         color: black;
     }
 
 h1, .h1 {
     font-size: 58px;
-    color: black;
 }
 
 .fade-carousel .carousel-inner .item .hero {
@@ -123,7 +134,7 @@ h1, .h1 {
     background-color: #1abc9c;
     border-color: #1abc9c;
     outline: none;
-    margin: 0px auto;
+    margin: 40px auto;
 }
 
 /********************************/
@@ -143,74 +154,79 @@ h1, .h1 {
 }
 
 .fade-carousel .slides .slide-1 {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/87/Gora%C5%BEde_panorama.jpg);
+    background-image: url(http://i.imgur.com/N977KmE.jpg);
 }
 
 .fade-carousel .slides .slide-2 {
-    background-image: url(http://static.panoramio.com/photos/original/42681136.jpg);
+    background-image: url(http://i.imgur.com/2qWBRay.jpg);
 }
 
 .fade-carousel .slides .slide-3 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+    background-image: url(http://i.imgur.com/62eDcbs.jpg);
 }
 
 .fade-carousel .slides .slide-4 {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Drina_River_Gorazde_2.JPG);
+    background-image: url(http://i.imgur.com/34aNEu6.jpg);
 }
 
 .fade-carousel .slides .slide-5 {
-    background-image: url(http://photos.wikimapia.org/p/00/02/20/71/56_full.jpeg);
+    background-image: url(http://i.imgur.com/Kpe08B9.jpg);
 }
 
 .fade-carousel .slides .slide-6 {
-    background-image: url(http://photos.wikimapia.org/p/00/02/20/71/56_full.jpeg);
+    background-image: url(http://i.imgur.com/1VK7gBn.jpg);
 }
 
 /********************************/
 /*          Media Queries       */
 /********************************/
 
-@media screen and (min-width: 980px) {
-    .hero {
-        width: 980px;
+@media screen and (min-width: 1080px) {
+    .slider {
+        width: 1080px;
+        font-size: 5em;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .hero h1 {
+    .slider h1 {
         font-size: 3em;
     }
 
-    .hero h3 {
+    .slider h3 {
         font-size: 1.3em;
     }
 
     h1 {
         display: block;
-        font-size: 4em;
+        font-size: 5em;
         -webkit-margin-before: 0.67em;
         -webkit-margin-after: 0.67em;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
-        font-family: Helvetica, "Times New Roman", Times, serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
 
-    .hero h1 {
-        color: black;
-        font-family: Helvetica, "Times New Roman", Times, serif;
+    .slider h1 {
+        font-family: 'Roboto', sans-serif;
     }
 
-    h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-        font-family: Helvetica, "Times New Roman", Times, serif;
-        font-weight: 700;
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
         line-height: 1.1;
-        color: black;
     }
 
     .thumbnail img {
         min-height: 250px;
         height: 450px;
     }
+
+
+}
+
     /*========== END OF CUSTOM ==========*/
+ 
+
 

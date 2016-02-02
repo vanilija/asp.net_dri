@@ -1,18 +1,20 @@
-﻿<!-- ======== CAROUSEL =========-->
+﻿    <!-- ======== CAROUSEL =========-->
 
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <!-- ========== INDICATORS ========== -->
+    <!--<ol class="carousel-indicators">
         <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#bs-carousel" data-slide-to="1"></li>
-    </ol>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>-->
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-1"></div>
-            <div class="hero">
+    <!-- ========== WRAPPER FOR SLIDES ========== -->
+
+<div class="carousel-inner">
+    <div class="item slides active">
+        <div class="slide-1"></div>
+            <div class="slider">
                 <hgroup>
                     <h1>Welcome to Gorazde</h1>
                     <h3>Enjoy your stay</h3>
@@ -24,7 +26,7 @@
         </div>
         <div class="item slides">
             <div class="slide-2"></div>
-            <div class="hero">
+            <div class="slider">
                 <hgroup>
                     <h1>Drinago team</h1>
                     <h3>Wishes you a pleasant stay</h3>
@@ -34,19 +36,26 @@
                 </form>
             </div>
         </div>
+    <div class="item slides">
+        <div class="slide-5"></div>
+        <div class="slider">
+        </div>
+    </div>
     </div>
 </div>
 
 <!-- ========= END OF CAROUSEL ========== -->
-
+<!-- ========== ROW ONE ========== -->
 <hr />
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
             <h4 align="center">@ViewBag.Message</h4>
+            <hr />
             <p align="justify">
-                <img class="img-responsive center-block" src="http://i.imgur.com/R8Xyf8p.jpg" />
+                <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                <br />
                 Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
                 Drinago Team wishes you a pleasant stay.
             </p>
@@ -54,41 +63,27 @@
         </div>
         <div class="col-md-4">
             <h4 align="center">@ViewBag.Message2</h4>
-            <img class="img-responsive center-block" src="http://i.imgur.com/SkoY75s.jpg" />
-            <p align="justify">Small map here maybe?</p>
+            <hr />
+            <p align="justify">
+                <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                <br />
+                Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
+                Drinago Team wishes you a pleasant stay.
+            </p>
             <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
         </div>
-
         <div class="col-md-4">
             <h4 align="center">@ViewBag.Message3</h4>
-            <img class="img-responsive center-block" src="http://i.imgur.com/lQRCV4J.jpg" />
-            <p align="justify">Small map here too?</p>
+            <hr />
+            <p align="justify">
+                <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                <br />
+                Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
+                Drinago Team wishes you a pleasant stay.
+            </p>
             <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
         </div>
     </div>
 </div>
 
 <!-- ========== END OF ROW ONE ========== -->
-<!-- ========== ROW TWO ========== -->
-
-<hr />
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <h4 align="center">@ViewBag.Message4</h4>
-            <img class="img-responsive center-block" src="http://i.imgur.com/ZDOOh7N.jpg" />
-            <p align="justify">Gorazde was multiethnical and multireligious from it's mentioning in historical documents</p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
-        </div>
-
-        <div class="col-md-6">
-
-            <h4 align="center">@ViewBag.Message5</h4>
-            <img class="img-responsive center-block" src="http://i.imgur.com/G88mnUW.jpg" />
-            <p align="justify">This area will hold an interactive map with a legend drawer on the left..</p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
-        </div>
-    </div>
-</div>
-
-<!-- ========== END OF WELCOME SECTION ========== -->

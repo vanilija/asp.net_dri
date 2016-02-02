@@ -4,6 +4,7 @@
 
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!--Import materialize.css-->
 
     <link type="text/css" rel="stylesheet" href="~/Content/materialize.min.css" media="screen,projection" />
@@ -34,6 +35,9 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                <a class="navbar-brand" >
+                    <img alt="Brand" src="http://www.clipartbest.com/cliparts/7Ta/oja/7TaojakEc.png" style="height: 70px; width: 60px; padding-bottom: 40px; padding-left: 20px;"/>
+                </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -44,14 +48,38 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Welcome", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Info", "Info", "Home")</li>
-                    <!--<li>@Html.ActionLink("Things to do", "Transportation", "Home")</li>-->
-                    <li>@Html.ActionLink("Food & Drink", "FoodAndDrink", "Home")</li>
-                    <li>@Html.ActionLink("Lodging", "Index", "Home")</li>
-                    <!--<li>@Html.ActionLink("Maps & Guides", "Home", "Home")</li>-->
+                    <li class="dropdown">
+                        <a href="http://drinago.azurewebsites.net/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Info<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Additional Info", "Info", "Home")</li>
+                            <li>@Html.ActionLink("Geology", "Info", "Home")</li>
+                            <li>@Html.ActionLink("Archeology", "Info", "Home")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("History", "Info", "Home")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Geography", "Info", "Home")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="http://drinago.azurewebsites.net/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Explore<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Where to stay", "WhereToStay", "Home")</li>
+                            <li>@Html.ActionLink("Where to eat", "WhereToEat", "Home")</li>
+                            <li>@Html.ActionLink("Where to shop", "WhereToShop", "Home")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("What to see", "WhatToSee", "Home")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("What to do", "WhatToDo", "Home")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Maps & Guides", "Transportation", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                 </ul>
+                </ul>
               
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -103,10 +131,5 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-   
-
-
-
-
 </body>
 </html>

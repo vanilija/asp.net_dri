@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Where to stay";
+
+}
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-4"></div>
+            <div class="slider">
+                <hgroup>
+                    <h1>Lodging</h1>
+                    <h3>Enjoy your stay</h3>
+                    <h5>Click on Learn more, for more information</h5>
+                </hgroup>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="sadrzaj">
+    <h3>@ViewBag.Message</h3>
+    <hr />
+    <h4>Idea for showing place to stay, goes like this, text below is just an example:</h4>
+    <p>
+        Few sentences about place of interest no more than, three or four, if the place is for example hotel, include things like:
+        <ul>
+            <li>How many rooms does it have?</li>
+            <li>How much money does it cost to rent a room for a night, two, three?</li>
+            <li>Do they serve breakfast, lunch, dinner?</li>
+            <li>Include the amount of seats, include the menu, do they have specials?</li>
+            <li>Include working hours, does it have WIFI etc.</li>
+            <li>Include few pictures, or just one, then when users click on Learn more button, take them to a new page with more detailed information about the place.</li>
+        </ul>
+    </p>
+    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+    </form>
+</div>
+
+
+<hr>
+
+<div class="sadrzaj">
+    <h3>@ViewBag.Message1</h3>
+    <hr />
+    <p>
+        Follow the guidlines already written.
+        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
+    </p>
+</div>
+
+<hr>
+
+<div class="sadrzaj">
+    <h3>@ViewBag.Message2</h3>
+    <hr />
+    <p>
+        Follow the guidlines already written.
+        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
+    </p>
+</div>
+
+<hr>

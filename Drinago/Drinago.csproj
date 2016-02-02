@@ -226,6 +226,8 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Home\WhereToStay.cshtml" />
+    <None Include="Views\Home\ThingsToDo.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -268,6 +270,10 @@
     <Content Include="Views\Home\Transportation.cshtml" />
     <Content Include="Views\Home\WhereTo.cshtml" />
     <Content Include="Views\Home\FoodAndDrink.cshtml" />
+    <Content Include="Views\Home\WhereToShop.cshtml" />
+    <Content Include="Views\Home\WhereToEat.cshtml" />
+    <Content Include="Views\Home\WhatToSee.cshtml" />
+    <Content Include="Views\Home\WhatToDo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

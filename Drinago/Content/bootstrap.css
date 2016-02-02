@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    margin: 11px;
+    margin: 5px;
 }
 
 article,
@@ -8308,24 +8308,3 @@ button.close {
     color: #fff;
 }
 
-
-/*========== BEGINNING OF CUSTOM CSS ========== */
-
-.row,
-.sadrzaj {
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-}
-
-.jumbotron-1 {
-    background: url(http://i.imgur.com/SkoY75s.jpg);
-    padding-top: 200px;
-    padding-bottom: 50px;
-    background-size: cover;
-}
-
-/*========== END OF CUSTOM CODE ========== */
