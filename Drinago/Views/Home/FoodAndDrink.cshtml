@@ -2,89 +2,138 @@
     ViewBag.Title = "Food and Drink";
 
 }
+<!-- ======== CAROUSEL ========= -->
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
-<header class="h">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="responsive-img" src="http://i.imgur.com/R8Xyf8p.jpg" alt="Chania">
-            </div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <!--<li data-target="#bs-carousel" data-slide-to="2"></li>-->
+    </ol>
 
-            <div class="item">
-                <img class="responsive-img" src="http://i.imgur.com/G88mnUW.jpg" alt="Chania">
-            </div>
-
-            <div class="item">
-                <img class="responsive-img" src="http://i.imgur.com/lQRCV4J.jpg" alt="Flower">
-            </div>
-
-            <div class="item">
-                <img class="responsive-img" src="http://i.imgur.com/ZDOOh7N.jpg" alt="Flower">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-4"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Food & Drink</h1>
+                    <h3>Enjoy the best food and drink</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Explore more</button>
+                </form>
             </div>
         </div>
-    </div>
-</header>
-
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="sadrzaj">
-        <h3>@ViewBag.Message</h3>
-        <p align="justify">
-            Here we need to include all of the restaurants, local caffee shops, our best picks where to drink and eat.
-        </p>
+        <div class="item slides">
+            <div class="slide-5"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Featured place!</h1>
+                    <h3>Description of featured place</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
+<!-- ======== END OF CAROUSEL ========= -->
+
 <br />
 
-<section id="FoodAndDrink">
-    <div class="row">
-        <div class="col-md-4">
-            <h4 align="center">@ViewBag.Message1</h4>
-            <p align="justify">
-                <img class="img-responsive center-block" src="http://mw2.google.com/mw-panoramio/photos/medium/40860307.jpg" />
-                Add little information about this place.
-            </p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
-        </div>
+<section>
 
-        <div class="col-md-4">
-            <h4 align="center">@ViewBag.Message2</h4>
-            <img class="img-responsive center-block" src="http://hotel-navigator.ba/images/hoteli/630_400/casablanca_gora_1376426063.jpg" />
-            <p align="justify">Add a little information about this place.</p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
-        </div>
-
-        <div class="col-md-4">
-            <h4 align="center">@ViewBag.Message3</h4>
-            <img class="img-responsive center-block" src="https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11266617_1480812462215956_1283968584_n.jpg" />
-            <p align="justify">Add a little information about this place.\.</p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+    <div class="container-fluid">
+        <div class="row" style="display:flex; flex-wrap: wrap;">
+            <div class="col-md-12">
+                <h4 align="center">@ViewBag.Message1</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="https://placeimg.com/1100/380/arch" style="height:350px" width="1100" />
+                    <br />
+                    Add more information about this place, more photos, phone number, amount of seats, rooms, menu.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
         </div>
     </div>
-
-    <!-- ========== END OF ROW ONE ========== -->
-    <!-- ========== ROW TWO ========== -->
 
     <hr />
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card-panel white lighten-5 z-depth-1">
-                <h4 align="center">@ViewBag.Message4</h4>
-                <img class="img-responsive center-block" src="https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11659358_865613526819427_7026179044602191014_n.jpg?oh=4d7963a0d284f462156d79b7906942d8&oe=572B7E37" />
-                <p align="justify">Add a little information about this place.</p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card-panel white lighten-5 z-depth-1">
-                <h4 align="center">@ViewBag.Message5</h4>
-                <img class="img-responsive center-block" src="http://www.indeks.ba/core/tmp/upload/images/gorazde_02_04__022.jpg" />
-                <p align="justify">Add a little information about this place.</p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 align="center">@ViewBag.Message2</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="https://placeimg.com/1100/380/arch" style="height:350px" width="1100" />
+                    <br />
+                    Add more information about this place, more photos, phone number, amount of seats, rooms, menu.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
             </div>
         </div>
     </div>
+
+    <hr />
+
+    <div class="container-fluid">
+        <div class="row" style="display:flex; flex-wrap: wrap;">
+            <div class="col-md-12">
+                <h4 align="center">@ViewBag.Message3</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="https://placeimg.com/1100/380/arch" style="height:350px" width="1100" />
+                    <br />
+                    Add more information about this place, more photos, phone number, amount of seats, rooms, menu.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="container-fluid">
+        <div class="row" style="display:flex; flex-wrap: wrap;">
+            <div class="col-md-12">
+                <h4 align="center">@ViewBag.Message4</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="https://placeimg.com/1100/380/arch" style="height:350px" width="1100" />
+                    <br />
+                    Add more information about this place, more photos, phone number, amount of seats, rooms, menu.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 align="center">@ViewBag.Message5</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="https://placeimg.com/1100/380/arch" style="height:350px" width="1100" />
+                    <br />
+                    Add more information about this place, more photos, phone number, amount of seats, rooms, menu.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
 </section>
+
 <!-- ========== END OF FOOD AND DRINK SECTION ========== -->

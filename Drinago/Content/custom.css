@@ -1,6 +1,4 @@
-﻿
-    
-/*========== BEGINNING OF CUSTOM CSS ========== */
+﻿/*========== BEGINNING OF CUSTOM CSS ========== */
 
 .row,
 .sadrzaj {
@@ -12,16 +10,207 @@
     padding-bottom: 0.1em;
 }
 
-.jumbotron-1 {
-    background: url(http://i.imgur.com/SkoY75s.jpg);
-    padding-top: 200px;
-    padding-bottom: 50px;
-    background-size: cover;
-}
-
-
 body {
     background-color: #E3F2FD;
+    font-family: Helvetica, "Times New Roman", Times, serif;
+    color: black;
 }
-/*========== END OF CUSTOM ==========*/
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail img {
+    height: 200px;
+}
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 60vh;
+}
+
+    .fade-carousel .carousel-inner .item {
+        height: 60vh;
+    }
+
+    .fade-carousel .carousel-indicators > li {
+        margin: 0 2px;
+        background-color: #f39c12;
+        border-color: #f39c12;
+        opacity: .7;
+    }
+
+        .fade-carousel .carousel-indicators > li.active {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+        }
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+    .hero h1 {
+        font-weight: bold;
+        margin: 0px;
+        padding-top: 0px;
+        color: black;
+    }
+
+h1, .h1 {
+    font-size: 58px;
+    color: black;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 4s all ease-in-out .1s;
+    -moz-transition: 4s all ease-in-out .1s;
+    -ms-transition: 4s all ease-in-out .1s;
+    -o-transition: 4s all ease-in-out .1s;
+    transition: 4s all ease-in-out .1s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 4s all ease-in-out .1s;
+    -moz-transition: 4s all ease-in-out .1s;
+    -ms-transition: 4s all ease-in-out .1s;
+    -o-transition: 4s all ease-in-out .1s;
+    transition: 4s all ease-in-out .1s;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+
+.btn.btn-lg {
+    padding: 10px 50px;
+}
+
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 0px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6 {
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/87/Gora%C5%BEde_panorama.jpg);
+}
+
+.fade-carousel .slides .slide-2 {
+    background-image: url(http://static.panoramio.com/photos/original/42681136.jpg);
+}
+
+.fade-carousel .slides .slide-3 {
+    background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+}
+
+.fade-carousel .slides .slide-4 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Drina_River_Gorazde_2.JPG);
+}
+
+.fade-carousel .slides .slide-5 {
+    background-image: url(http://photos.wikimapia.org/p/00/02/20/71/56_full.jpeg);
+}
+
+.fade-carousel .slides .slide-6 {
+    background-image: url(http://photos.wikimapia.org/p/00/02/20/71/56_full.jpeg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 980px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero h3 {
+        font-size: 1.3em;
+    }
+
+    h1 {
+        display: block;
+        font-size: 4em;
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-family: Helvetica, "Times New Roman", Times, serif;
+        font-weight: 700;
+    }
+
+    .hero h1 {
+        color: black;
+        font-family: Helvetica, "Times New Roman", Times, serif;
+    }
+
+    h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: Helvetica, "Times New Roman", Times, serif;
+        font-weight: 700;
+        line-height: 1.1;
+        color: black;
+    }
+
+    .thumbnail img {
+        min-height: 250px;
+        height: 450px;
+    }
+    /*========== END OF CUSTOM ==========*/
 

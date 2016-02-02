@@ -1,63 +1,95 @@
-﻿<!-- ========== JUMBOTRON ========== -->
+﻿<!-- ======== CAROUSEL =========-->
 
-<div class="container-fluid jumbotron-1"></div>
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-    <div class="sadrzaj">
-        <h3 align="center">Welcome to Gorazde</h3>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Welcome to Gorazde</h1>
+                    <h3>Enjoy your stay</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                </form>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Drinago team</h1>
+                    <h3>Wishes you a pleasant stay</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net//Home/About" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">About us</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
-<!-- ========== END OF JUMBOTRON ========== -->
-<!-- ========== WELCOME ========== -->
+
+<!-- ========= END OF CAROUSEL ========== -->
 
 <hr />
 
-<section id="BasicInfo">
-    <div class="row">
-        <div class="col-md-4">
+<div class="container-fluid">
+    <section id="BasicInfo">
+        <div class="row">
+            <div class="col-md-4">
                 <h4 align="center">@ViewBag.Message</h4>
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/R8Xyf8p.jpg" />
                     Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
                     Drinago Team wishes you a pleasant stay.
                 </p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
-        </div>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
 
-        <div class="col-md-4">
+            <div class="col-md-4">
                 <h4 align="center">@ViewBag.Message2</h4>
                 <img class="img-responsive center-block" src="http://i.imgur.com/SkoY75s.jpg" />
-                <p align="justify">According to the latest census which was held in 2013, Gorazde had around 12.512 citizens.</p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
-        </div>
+                <p align="justify">Small map here maybe?</p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
 
-        <div class="col-md-4">
+            <div class="col-md-4">
                 <h4 align="center">@ViewBag.Message3</h4>
                 <img class="img-responsive center-block" src="http://i.imgur.com/lQRCV4J.jpg" />
-                <p align="justify">Gorazde was multiethnical and multireligious from it's mentioning in historical documents.</p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+                <p align="justify">Small map here too?</p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
         </div>
-    </div>
 
-    <!-- ========== END OF ROW ONE ========== -->
-    <!-- ========== ROW TWO ========== -->
+        <!-- ========== END OF ROW ONE ========== -->
+        <!-- ========== ROW TWO ========== -->
 
-    <hr />
+        <hr />
 
-    <div class="row">
-        <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
                 <h4 align="center">@ViewBag.Message4</h4>
                 <img class="img-responsive center-block" src="http://i.imgur.com/ZDOOh7N.jpg" />
-                <p align="justify">Self explanatory. Time zone in Gorazde.</p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
-        </div>
+                <p align="justify">Gorazde was multiethnical and multireligious from it's mentioning in historical documents</p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
 
-        <div class="col-md-6">
+            <div class="col-md-6">
 
                 <h4 align="center">@ViewBag.Message5</h4>
                 <img class="img-responsive center-block" src="http://i.imgur.com/G88mnUW.jpg" />
                 <p align="justify">This area will hold an interactive map with a legend drawer on the left..</p>
-                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more &raquo;</a></p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 <!-- ========== END OF WELCOME SECTION ========== -->
