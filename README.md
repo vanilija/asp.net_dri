@@ -6,4 +6,4 @@ This website was created with focus on introducing the potential which whom this
 Project was made to learn more about ASP.NET MVC 4, C#, Bootstrap, CSS, Javascript, HTML5.
 <hr>
 
-![myimage-alt-tag](http://i.imgur.com/Uns8SKb.png)
+![myimage-alt-tag](http://i.imgur.com/TFOmIWL.png)
