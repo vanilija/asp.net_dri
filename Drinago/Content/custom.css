@@ -12,11 +12,24 @@
     color: black;
 }
 
+.rowcss
+{
+    background-color: #2196f3;
+ 
+}
+
+.footertxt {
+    color: white;
+    font-weight: 400;
+}
+a {
+    color: white;
+}
+
 body {
     background-color: #E3F2FD;
     font-family: 'Roboto', sans-serif;
     margin: 10px;
-
 }
 
 .img-responsive,
@@ -44,13 +57,15 @@ Image credits: unsplash.com
 .fade-carousel {
     position: relative;
     height: 50vh;
+
 }
 
     .fade-carousel .carousel-inner .item {
         height: 50vh;
+
     }
 
-    .fade-carousel .carousel-indicators > li {
+/* .fade-carousel .carousel-indicators > li {
         margin: 0 5px;
         background-color: #f39c12;
         border-color: #f39c12;
@@ -64,14 +79,14 @@ Image credits: unsplash.com
             opacity: 1;
             margin-bottom: 1px;
         }
-
+       */
 /********************************/
 /*           Headers        */
 /********************************/
 
 .slider {
-    position: absolute;
-    top:50%;
+    position: relative;
+    top: 50%;
     left: 50%;
     z-index: 3;
     color: #fff;
@@ -221,11 +236,11 @@ h1, .h1 {
     .thumbnail img {
         min-height: 250px;
         height: 450px;
-    }
 
+    }
 }
 
-    /*========== END OF CUSTOM ==========*/
- 
+/*========== END OF CUSTOM ==========*/
+
 
 
