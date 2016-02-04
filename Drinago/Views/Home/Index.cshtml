@@ -1,84 +1,118 @@
-﻿    <!-- ======== CAROUSEL =========-->
+﻿@{
+    ViewBag.Title = "Drinago";
+}
 
 
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+<!-- ======== CAROUSEL =========-->
 
-        <!-- ========== WRAPPER FOR SLIDES ========== -->
+<!--<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">-->
 
-        <div class="carousel-inner">
-            <div class="item slides active">
-                <div class="slide-1"></div>
-                <div class="slider">
-                    <hgroup>
-                        <h1>Welcome to Gorazde</h1>
-                        <h3>Enjoy your stay</h3>
-                    </hgroup>
-                    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
-                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-                    </form>
-                </div>
+<!-- ========== WRAPPER FOR SLIDES ========== -->
+
+   <!-- <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="slider">
+                <hgroup>
+                    <h1>Welcome to Gorazde</h1>
+                    <h3>Enjoy your stay</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                </form>
             </div>
-            <div class="item slides">
-                <div class="slide-2"></div>
-                <div class="slider">
-                    <hgroup>
-                        <h1>Drinago team</h1>
-                        <h3>Wishes you a pleasant stay</h3>
-                    </hgroup>
-                    <form style="display: inline" action="http://drinago.azurewebsites.net//Home/About" method="get">
-                        <button class="btn btn-hero btn-lg" role="button">About us</button>
-                    </form>
-                </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="slider">
+                <hgroup>
+                    <h1>Drinago team</h1>
+                    <h3>Wishes you a pleasant stay</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net//Home/About" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">About us</button>
+                </form>
             </div>
-            <div class="item slides">
-                <div class="slide-5"></div>
-                <div class="slider">
-                </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-5"></div>
+            <div class="slider">
             </div>
         </div>
     </div>
+</div>-->
 
-<!-- ========= END OF CAROUSEL ========== -->
-
-<!-- ========== ROW ONE ========== -->
-
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4">
-            <h4 align="center">@ViewBag.Message</h4>
-            <hr />
-            <p align="justify">
-                <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
-                <br />
-                Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
-                Drinago Team wishes you a pleasant stay.
-            </p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
-        </div>
-        <div class="col-md-4">
-            <h4 align="center">@ViewBag.Message2</h4>
-            <hr />
-            <p align="justify">
-                <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
-                <br />
-                Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
-                Drinago Team wishes you a pleasant stay.
-            </p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
-        </div>
-        <div class="col-md-4">
-            <h4 align="center">@ViewBag.Message3</h4>
-            <hr />
-            <p align="justify">
-                <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
-                <br />
-                Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
-                Drinago Team wishes you a pleasant stay.
-            </p>
-            <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="">
+                <video id="testiram" loop="loop" preload="auto" id="pretzel-video" autoplay class="video-playing">
+                    <source src="//a0.muscache.com/airbnb/static/Paris-P1-1.mp4" type="video/mp4">
+                    <source src="//a0.muscache.com/airbnb/static/Paris-P1-0.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Welcome to Drinago</h1>
+                    <h3>Enjoy your stay</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">See all features</button>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- ========== END OF ROW ONE ========== -->
+<style>
+    #testiram {
+        height: 100%;
+
+    }
+</style>
+    <!-- ========= END OF CAROUSEL ========== -->
+    <!-- ========== ROW ONE ========== -->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 align="center">@ViewBag.Message</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    Welcome to industrial, cultural, administrative, university and sport's center of Upper Drina's region of Bosnian - podrinje canton.
+                    Drinago Team wishes you a pleasant stay. Please click on learn more to read more.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                <br />
+            </div>
+            <div class="col-md-4">
+                <h4 align="center">@ViewBag.Message2</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    This area should include basic information about topographical position of Gorazde. Further more, when you click on learn more, it should
+                    take users to a new page with more information including map or maps.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                <br />
+            </div>
+            <div class="col-md-4">
+                <h4 align="center">@ViewBag.Message3</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    As the name says, this section should have basic information about Area of Gorazde. Add few sentences and when you click on learn more, it should
+                    take users to a new page with more information.
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                <br />
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== END OF ROW ONE ========== -->
