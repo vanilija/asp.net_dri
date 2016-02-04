@@ -3,17 +3,23 @@
 
 }
 
-<div class="jumbotron">
-    <h2 class="About" align="center">@ViewBag.Title</h2>
+<!-- ========== CAROUSEL ========== -->
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-3"></div>
+            <div class="slider">
+                <hgroup>
+                    <h1>About drinago</h1>
+                </hgroup>
+            </div>
+        </div>
+    </div>
 </div>
-<style>
-    .About {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-</style>
-<!-- ========== Editor's Notice ========== -->
 <hr />
+<!-- ========== END OF CAROUSEL ========== -->
+<!-- ========== Editor's Notice ========== -->
+
 <div class="section1">
     <div class="col s12 m8 offset-m2 l6 offset-l3">
         <h3>@ViewBag.Message</h3>

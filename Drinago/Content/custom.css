@@ -15,7 +15,7 @@
 body {
     background-color: #E3F2FD;
     font-family: 'Roboto', sans-serif;
-    margin: 11px;
+    margin: 10px;
 
 }
 
@@ -222,7 +222,6 @@ h1, .h1 {
         min-height: 250px;
         height: 450px;
     }
-
 
 }
 

@@ -10,7 +10,12 @@
     <link type="text/css" rel="stylesheet" href="~/Content/materialize.min.css" media="screen,projection" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>@ViewBag.Title</title>
+
+
+
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -28,16 +33,23 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <link rel="stylesheet" type="text/css" href="~/Content/custom.css" />
-
 </head>
-
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" >
-                    <img alt="Brand" src="http://www.clipartbest.com/cliparts/7Ta/oja/7TaojakEc.png" style="height: 70px; width: 60px; padding-bottom: 40px; padding-left: 20px;"/>
+                <a class="navbar-brand pull-left" >
+                    <img alt="Brand" id="brand-image" src="https://cdn4.iconfinder.com/data/icons/flatified/128/map.png"/>
                 </a>
+
+                <style>
+                    .navbar {
+                        border: none;
+                    }
+                    #brand-image {
+height: 25px;
+                    }
+                </style>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -78,8 +90,6 @@
                     <li>@Html.ActionLink("Maps & Guides", "Transportation", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                 </ul>
-              
-
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -88,77 +98,37 @@
 
         @RenderBody()
         <hr />
-        <!--<footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Explore</h5>
-                       <ul>
-                           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Welcome</a></li>
-                           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Things to do</a></li>
-                           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Food & Drink</a></li>
-                           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Lodging</a></li>
-                           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Maps & Guides</a></li>
-                           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">About us</a></li>
-                       </ul>
-                       </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Follow us</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Facebook</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://twitter.com/">Twitter</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://plus.google.com/">Google+</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/">Youtube</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#">Feedback</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#">Contact us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © Drinago 2016
-                </div>
-            </div>
-        </footer>-->
         <footer>
             <div class="sadrzaj 1">
                 <div class="row">
-                    <div class="col-md-6 footer-left">
-                      <br />
-                          <ul class="list-inline">
+                    <div class="col-md-4 footer-left">
+                        <br />
+                        <ul class="list-inline">
+                            <li>@Html.ActionLink("Welcome", "Home", "Home")</li>
                             <li>@Html.ActionLink("Info", "Info", "Home")</li>
                             <li>@Html.ActionLink("Maps & Guides", "Transportation", "Home")</li>
                             <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li><a href="/help">Help</a>
-                            </li>
-                            <li><a href="/contact">Contact</a>
-                            </li>
                         </ul>
+                        <p>© Drinago 2016</p>
                     </div>
-                    <div class="col-md-6 footer-right">
+                    <div class="col-md-4 footer-right">
                         <br />
                         <ul class="list-inline">
-                            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/humansofgorazde/?fref=ts">Facebook</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://twitter.com/">Twitter</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://plus.google.com/">Google+</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/">Youtube</a></li>
+                            <li><a href="https://www.facebook.com/humansofgorazde/?fref=ts">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://plus.google.com/">Google+</a></li>
+                            <li><a href="https://www.youtube.com/">Youtube</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 footer-below">
-                        <ul class="list-inline">
-
-                            <li>@Html.ActionLink("© Drinago 2016", "About", "Home")</li>
-                        </ul>
+                    <div class="col-md-4 footer">
+                        <br />
+                        <p>Drinago is a team of two people, for now, but we welcome you to check our GitHub page.<p>
+                        <p><a href="https://github.com/vanilija/asp.net_dri">Learn more.</a></p>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
-
-  
+        </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -168,5 +138,6 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
 </body>
 </html>
