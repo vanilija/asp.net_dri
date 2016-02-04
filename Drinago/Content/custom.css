@@ -12,16 +12,15 @@
     color: black;
 }
 
-.rowcss
-{
+.rowcss {
     background-color: #2196f3;
- 
 }
 
 .footertxt {
     color: white;
     font-weight: 400;
 }
+
 a {
     color: white;
 }
@@ -44,48 +43,44 @@ body {
     height: 200px;
 }
 
+.thumbnail img {
+    min-height: 250px;
+    height: 450px;
+}
+
 /*
-Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
 */
 
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
-
 .fade-carousel {
     position: relative;
     height: 50vh;
-
 }
 
     .fade-carousel .carousel-inner .item {
         height: 50vh;
-
     }
 
-/* .fade-carousel .carousel-indicators > li {
-        margin: 0 5px;
-        background-color: #f39c12;
-        border-color: #f39c12;
-        opacity: .7;
-        margin-bottom: 1px;
-    }
+fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
 
-        .fade-carousel .carousel-indicators > li.active {
-            width: 12px;
-            height: 12px;
-            opacity: 1;
-            margin-bottom: 1px;
-        }
-       */
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
 /********************************/
-/*           Headers        */
+/*          Hero Headers        */
 /********************************/
-
-.slider {
-    position: relative;
+.hero {
+    position: absolute;
     top: 50%;
     left: 50%;
     z-index: 3;
@@ -100,46 +95,36 @@ Image credits: unsplash.com
     transform: translate3d(-50%,-50%,0);
 }
 
-    .slider h1 {
-        font-weight: 400;
-        margin: 0px;
-        padding-top: 0px;
-        color: black;
-        font-size: 70px;
+    .hero h1 {
+        font-size: 5em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
     }
-
-    .slider h3 {
-        color: black;
-    }
-
-h1, .h1 {
-    font-size: 58px;
-}
 
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
-    -webkit-transition: 4s all ease-in-out .1s;
-    -moz-transition: 4s all ease-in-out .1s;
-    -ms-transition: 4s all ease-in-out .1s;
-    -o-transition: 4s all ease-in-out .1s;
-    transition: 4s all ease-in-out .1s;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
 }
 
 .fade-carousel .carousel-inner .item.active .hero {
     opacity: 1;
-    -webkit-transition: 4s all ease-in-out .1s;
-    -moz-transition: 4s all ease-in-out .1s;
-    -ms-transition: 4s all ease-in-out .1s;
-    -o-transition: 4s all ease-in-out .1s;
-    transition: 4s all ease-in-out .1s;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
 }
 
 /********************************/
 /*          Custom Buttons      */
 /********************************/
-
 .btn.btn-lg {
-    padding: 10px 50px;
+    padding: 10px 40px;
 }
 
 .btn.btn-hero,
@@ -149,7 +134,7 @@ h1, .h1 {
     background-color: #1abc9c;
     border-color: #1abc9c;
     outline: none;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 /********************************/
@@ -158,88 +143,49 @@ h1, .h1 {
 
 .fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3,
-.fade-carousel .slides .slide-4,
-.fade-carousel .slides .slide-5,
-.fade-carousel .slides .slide-6 {
-    height: 60vh;
+.fade-carousel .slides .slide-3 {
+    height: 50vh;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .fade-carousel .slides .slide-1 {
-    background-image: url(http://i.imgur.com/N977KmE.jpg);
+    background-image: url(http://i.imgur.com/2hAJxMV.jpg);
 }
 
 .fade-carousel .slides .slide-2 {
-    background-image: url(http://i.imgur.com/2qWBRay.jpg);
-}
-
-.fade-carousel .slides .slide-3 {
     background-image: url(http://i.imgur.com/62eDcbs.jpg);
 }
 
-.fade-carousel .slides .slide-4 {
-    background-image: url(http://i.imgur.com/34aNEu6.jpg);
-}
-
-.fade-carousel .slides .slide-5 {
-    background-image: url(http://i.imgur.com/Kpe08B9.jpg);
-}
-
-.fade-carousel .slides .slide-6 {
-    background-image: url(http://i.imgur.com/1VK7gBn.jpg);
+.fade-carousel .slides .slide-3 {
+    background-image: url(http://i.imgur.com/IitkXgH.jpg);
 }
 
 /********************************/
 /*          Media Queries       */
 /********************************/
-
-@media screen and (min-width: 1080px) {
-    .slider {
-        width: 1080px;
-        font-size: 5em;
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 980px;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .slider h1 {
-        font-size: 3em;
+    .hero h1 {
+        font-size: 3.5em;
     }
 
-    .slider h3 {
+    .hero h3 {
         font-size: 1.3em;
-    }
-
-    h1 {
-        display: block;
-        font-size: 5em;
-        -webkit-margin-before: 0.67em;
-        -webkit-margin-after: 0.67em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-    }
-
-    .slider h1 {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        line-height: 1.1;
-    }
-
-    .thumbnail img {
-        min-height: 250px;
-        height: 450px;
-
     }
 }
 
+.slide1 img {
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+}
 /*========== END OF CUSTOM ==========*/
 
 

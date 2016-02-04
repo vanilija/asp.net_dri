@@ -1,26 +1,59 @@
-﻿<!--@{
+﻿@{
     ViewBag.Title = "Additional Info";
-}-->
-<!--<h2>@ViewBag.Title.</h2>
-<!--@ViewBag.Message-->
+}
 
 <!-- ========== SADRZAJ in CSS is created for material design purpose only ========== -->
 
 <!-- ======== CAROUSEL =========-->
 
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item slides active">
-            <div class="slide-5"></div>
-            <div class="slider">
+            <div class="slide-1"></div>
+            <div class="hero">
                 <hgroup>
-                    <h1>Basic Information</h1>
-                    <h3>Enjoy your stay</h3>
+                    <h1>Welcome</h1>
+                    <h3>For more infomation, click learn more</h3>
                 </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Explore</h1>
+                    <h3>Explore region of Drinago with our help</h3>
+                </hgroup>
+
+                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                </form>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Things to do?</h1>
+                    <h3>Click on the dropdown menu, to learn more</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">See all features</button>
             </div>
         </div>
     </div>
 </div>
+
+<!-- ========= END OF CAROUSEL ========== -->
+
 <div class="sadrzaj">
     <h3>@ViewBag.Message</h3>
 
