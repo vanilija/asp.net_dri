@@ -8,4 +8,4 @@ This website was created with focus on introducing the potential which whom this
 
 
 
-![myimage-alt-tag](http://i.imgur.com/TFOmIWL.png)
+![myimage-alt-tag](http://i.imgur.com/Ks9j7kV.png)
