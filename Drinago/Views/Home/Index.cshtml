@@ -42,35 +42,48 @@
     </div>
 </div>-->
 
+<!-- ======== CAROUSEL =========-->
+
+
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <!-- Overlay -->
-    <!-- Wrapper for slides -->
+
+    <!-- ========== WRAPPER FOR SLIDES ========== -->
+
     <div class="carousel-inner">
         <div class="item slides active">
-            <div class="">
-                <video id="testiram" loop="loop" preload="auto" id="pretzel-video" autoplay class="video-playing">
-                    <source src="//a0.muscache.com/airbnb/static/Paris-P1-1.mp4" type="video/mp4">
-                    <source src="//a0.muscache.com/airbnb/static/Paris-P1-0.webm" type="video/webm">
-                </video>
-            </div>
-            <div class="hero">
+            <div class="slide-1"></div>
+            <div class="slider">
                 <hgroup>
-                    <h1>Welcome to Drinago</h1>
+                    <h1>Welcome to Gorazde</h1>
                     <h3>Enjoy your stay</h3>
                 </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">See all features</button>
+                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                </form>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="slider">
+                <hgroup>
+                    <h1>Drinago team</h1>
+                    <h3>Wishes you a pleasant stay</h3>
+                </hgroup>
+                <form style="display: inline" action="http://drinago.azurewebsites.net//Home/About" method="get">
+                    <button class="btn btn-hero btn-lg" role="button">About us</button>
+                </form>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-5"></div>
+            <div class="slider">
             </div>
         </div>
     </div>
 </div>
 
-<style>
-    #testiram {
-        height: 100%;
+<!-- ========= END OF CAROUSEL ========== -->
 
-    }
-</style>
-    <!-- ========= END OF CAROUSEL ========== -->
     <!-- ========== ROW ONE ========== -->
 
 
