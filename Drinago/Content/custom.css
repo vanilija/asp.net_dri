@@ -93,6 +93,7 @@ fade-carousel .carousel-indicators > li {
     -ms-transform: translate3d(-50%,-50%,0);
     -o-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
+    font-family: 'Allan', cursive;
 }
 
     .hero h1 {
@@ -100,6 +101,7 @@ fade-carousel .carousel-indicators > li {
         font-weight: bold;
         margin: 0;
         padding: 0;
+        font-family: 'Allan', cursive;
     }
 
 .fade-carousel .carousel-inner .item .hero {
@@ -148,6 +150,11 @@ fade-carousel .carousel-indicators > li {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
 
 .fade-carousel .slides .slide-1 {
@@ -174,10 +181,14 @@ fade-carousel .carousel-indicators > li {
 @media screen and (max-width: 640px) {
     .hero h1 {
         font-size: 3.5em;
+        font-family: 'Allan', cursive;
+        color: black;
     }
 
     .hero h3 {
         font-size: 1.3em;
+        font-family: 'Allan', cursive;
+        color: black;
     }
 }
 
@@ -185,6 +196,10 @@ fade-carousel .carousel-indicators > li {
     width: auto;
     height: 225px;
     max-height: 225px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: black;
 }
 /*========== END OF CUSTOM ==========*/
 
