@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="~/Content/custom.css" />
 </head>
 <body>
+    <link rel="shortcut icon" type="image/ico" href="~/favicon.ico">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -43,8 +44,9 @@
                     .navbar {
                         border: none;
                     }
+
                     #brand-image {
-height: 25px;
+                        height: 25px;
                     }
                 </style>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -62,7 +64,7 @@ height: 25px;
                             Info<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Additional Info", "Info", "Home")</li>
+                            <li>@Html.ActionLink("Basic Info", "Info", "Home")</li>
                             <li>@Html.ActionLink("Geology", "Info", "Home")</li>
                             <li>@Html.ActionLink("Archeology", "Info", "Home")</a></li>
                             <li role="separator" class="divider"></li>
@@ -95,7 +97,7 @@ height: 25px;
 
         @RenderBody()
 
-        <hr />
+        <br />
         <footer class="container-fluid">
             <div class="row rowcss">
                 <div class="col-md-4 footer-left">
@@ -124,7 +126,6 @@ height: 25px;
                 </div>
             </div>
         </footer>
-
 
     </div>
 

@@ -1,184 +1,194 @@
 ﻿@{
-    ViewBag.Title = "Additional Info";
+    ViewBag.Title = "Basic Information";
 }
 
 @{
-    ViewBag.Message = "Additional Information";
-    ViewBag.Message1 = "Basic Info";
-    ViewBag.Message2 = "Topographical position";
-    ViewBag.Message3 = "Area of Gorazde";
-    ViewBag.Message4 = "Ethnicity and Religion";
-    ViewBag.Message5 = "Climate, electricity, water supply, currency";
-    ViewBag.Message6 = "Population";
-    ViewBag.Message7 = "Time zone";
-    ViewBag.Message8 = "Holidays";
+    ViewBag.Message = "Basic Information";
+    ViewBag.Message1 = "Population";
+    ViewBag.Message2 = "Area of Gorazde";
+    ViewBag.Message3 = "Timezone";
+    ViewBag.Message4 = "Climate";
+    ViewBag.Message5 = "Ethnicity and religion";
+    ViewBag.Message6 = "Electricity";
+    ViewBag.Message7 = "Water";
+    ViewBag.Message8 = "Currency";
+    ViewBag.Message9 = "Working Hours";
+    ViewBag.Message10 = "General Numbers";
+    ViewBag.Message11 = "Holidays";
 }
 
 <!-- ========== SADRZAJ in CSS is created for material design purpose only ========== -->
 
 <!-- ======== CAROUSEL =========-->
+<body class="infosadrzaj">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
 
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#bs-carousel" data-slide-to="1"></li>
-        <li data-target="#bs-carousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-1"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1>Welcome</h1>
-                    <h3>For more infomation, click learn more</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-            </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-2"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1>Explore</h1>
-                    <h3>Explore region of Drinago with our help</h3>
-                </hgroup>
-
-                <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Welcome</h1>
+                        <h3>For more infomation, click learn more</h3>
+                    </hgroup>
                     <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-                </form>
+                </div>
             </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-3"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1>Things to do?</h1>
-                    <h3>Click on the dropdown menu, to learn more</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">See all features</button>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Explore</h1>
+                        <h3>Explore region of Drinago with our help</h3>
+                    </hgroup>
+
+                    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Info" method="get">
+                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Things to do?</h1>
+                        <h3>Click on the dropdown menu, to learn more</h3>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button">See all features</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- ========= END OF CAROUSEL ========== -->
+    <!-- ========= END OF CAROUSEL ========== -->
 
-<div class="sadrzaj">
-    <h3>@ViewBag.Message</h3>
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message</h3>
+        <p>Here are some basic information about Gorazde that you should know.</p>
+    </div>
 
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-    </p>
-</div>
+    <br />
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message1</h3>
+        <hr />
+        <p>City of Gorazde 16,273 (1991), 12,512 (2013)</p>
+        <p>Municipality of Gorazde 37,573 (1991), 22,000 (2013)</p>
+    </div>
 
-<hr>
+    <br />
 
-<div class="sadrzaj">
-    <h3>@ViewBag.Message2</h3>
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-    </p>
-</div>
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message2</h3>
+        <hr />
+        <p>City of Gorazde - 6,05km2</p>
+        <p>Municipality of Gorazde - 248, 8km2</p>
+    </div>
 
-<hr>
+    <br />
 
-<div class="sadrzaj">
-    <h3>@ViewBag.Message3</h3>
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message3</h3>
+        <hr />
+        <p>The time zone in Gorazde is Central European Time (CET+1)</p>
+    </div>
+
+    <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message4</h3>
+        <hr />
+        <p align="justify">
+            Climate in Gorazde by Wolfgang Koeppen is moderately humid. Without dry seasons with warm summers.
+            The average temperature for January is -1.2°C and i July 19,0°C. Yearly air temperature in Gorazde is 9,6°C. The average amout of precipitation is around 800mm.
+            Also the average temperature fluctation is +-20°C. The average temperature of river Drina is 8°C
+        </p>
+    </div>
+
+    <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message5</h3>
+        <hr />
+        <p align="justify">
+            Gorazde is multiethnical and multireligious city in which are most dominant group Bosnjaci (Muslims - Bosniaks), Serbs (Orthodox) and Croats (Catholics) and others.
+            Before the second world war the jews lived in Gorazde. One of the most famous jew was Isak Samokovlija, the first doctor in the city who  was educated in Vienna.
+        </p>
+    </div>
+
+   <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message6</h3>
+        <hr />
+        <p align="justify">
+            Electrical energy in Bosnia and Herzegovina has a standard voltage of 220v and frequency of 50hz.
+            Please check your devices and see if they comply with the standard before using them.
+        </p>
+    </div>
+
+    <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message7</h3>
+        <hr />
+        <p align="justify">
+            Drina as a river represents second category of watercours by the water quality, which means
+            that is is possible to bathe in the river, catch fish and to have recreation.
+        </p>
+    </div>
+
+    <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message8</h3>
+        <hr />
+        <p align="justify">
+            Bosnian mark (BAM), convertible mark (KM) is the official currency is Bosnia and Herzgeovina.
+            You can exchange currency is banks, post offices or in exchange offices. Of course, it would be
+            desirable to exchange your currency right away on arrival to Bosnia and Herzegovina.
+        </p>
+    </div>
+
+    <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message9</h3>
+        <hr />
+
+        <p><b>Please take note that this working hours are for most of the privately owned businesses.</b></p>
+        <p align="justify">Monday - Friday (07:00h - 23:00h).</p>
+        <p>Saturday (07:00h - 23:00)</p>
+        <p>Sunday (closed)</p>
+        <hr />
+        <p><b>For institutions working hours are as following:</b></p>
+        <p>Monday - Friday (08:00h - 16:00h)</p>
+        <p>Saturday - Sunday (closed)</p>
+    </div>
+
+    <br />
+
+    <div class="sadrzaj">
+        <h3>@ViewBag.Message10</h3>
     <hr />
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-    </p>
+    <p>Numbers that you should know are as following:</p>
+    <ul>
+        <li>International dialing code for Bosnia and Herzegovina is: +387 --- ---</li>
+        <li>Dialing code for Gorazde is: (0) 38 --- ---</li>
+        <li>Postal code for Gorazde is: 73000</li>
+    </ul>
 </div>
 
-<hr>
+</body>
 
-<div class="sadrzaj">
-    <h3>@ViewBag.Message4</h3>
-    <hr />
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-
-    </p>
-</div>
-
-<hr>
-
-<div class="sadrzaj">
-    <h3>@ViewBag.Message5</h3>
-    <hr />
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-
-    </p>
-</div>
-<hr>
-
-<div class="sadrzaj">
-    <h3>@ViewBag.Message6</h3>
-    <hr />
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-    </p>
-</div>
-<hr>
-<div class="sadrzaj">
-    <h3>@ViewBag.Message7</h3>
-    <hr />
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-
-    </p>
-</div>
-
-<hr>
-
-<div class="sadrzaj">
-    <h3>@ViewBag.Message8</h3>
-    <hr />
-    <p>For now, when users clicks on a button located on the frontpage, that button should take users here.</p>
-    <p>
-        Actually better idea is to create a new page for every category, for example:
-        <ul>
-            <li>When you click on Learn More button, it takes you to a new page, for example when you click on Learn more button located on Basic Info button, it should take you to a new page called Basic Info with more informations.</li>
-        </ul>
-        <img class="img-thumbnail" src="https://placeimg.com/1120/480/tech" />
-    </p>
-</div>
-
+<style>
+    .infosadrzaj {
+        background-color: #cddc39;
+    }
+</style>
