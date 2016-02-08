@@ -150,23 +150,23 @@ fade-carousel .carousel-indicators > li {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 
 .fade-carousel .slides .slide-1 {
-    background-image: url(http://i.imgur.com/2hAJxMV.jpg);
+    background-image: url(https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/11794208_938616782866488_1991752556209145463_o.jpg);
 }
 
 .fade-carousel .slides .slide-2 {
-    background-image: url(http://i.imgur.com/62eDcbs.jpg);
+    background-image: url(https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtl1/t31.0-8/11865346_938616906199809_3457460157191042885_o.jpg);
 }
 
 .fade-carousel .slides .slide-3 {
-    background-image: url(http://i.imgur.com/IitkXgH.jpg);
+    background-image: url(https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11794562_938619816199518_8261073957166097244_o.jpg);
 }
 
 /********************************/
@@ -182,13 +182,13 @@ fade-carousel .carousel-indicators > li {
     .hero h1 {
         font-size: 3.5em;
         font-family: 'Allan', cursive;
-        color: black;
+        color: white;
     }
 
     .hero h3 {
         font-size: 1.3em;
         font-family: 'Allan', cursive;
-        color: black;
+        color: white;
     }
 }
 
@@ -198,9 +198,15 @@ fade-carousel .carousel-indicators > li {
     max-height: 225px;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: black;
+/*h1, h2, h3, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: white;
+}*/
+
+.white {
+    color: white;
 }
+
+
 /*========== END OF CUSTOM ==========*/
 
 
