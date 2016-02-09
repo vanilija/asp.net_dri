@@ -71,5 +71,9 @@ namespace Drinago.Controllers
             return View();
         }
 
+        public ActionResult Geology()
+        {
+            return View();
+        }
     }
 }

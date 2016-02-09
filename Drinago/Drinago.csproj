@@ -274,6 +274,7 @@
     <Content Include="Views\Home\WhereToEat.cshtml" />
     <Content Include="Views\Home\WhatToSee.cshtml" />
     <Content Include="Views\Home\WhatToDo.cshtml" />
+    <Content Include="Views\Home\Geology.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
