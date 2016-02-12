@@ -158,16 +158,28 @@ fade-carousel .carousel-indicators > li {
 }
 
 .fade-carousel .slides .slide-1 {
-    background-image: url(https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/11794208_938616782866488_1991752556209145463_o.jpg);
+    background-image: url(http://i.imgur.com/R90vJw9.jpg);
 }
 
 .fade-carousel .slides .slide-2 {
-    background-image: url(https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtl1/t31.0-8/11865346_938616906199809_3457460157191042885_o.jpg);
+    background-image: url(http://i.imgur.com/xVeMS1n.jpg);
 }
 
 .fade-carousel .slides .slide-3 {
-    background-image: url(https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11794562_938619816199518_8261073957166097244_o.jpg);
+    background-image: url(http://i.imgur.com/7tu5zvq.jpg);
 }
+.fade-carousel .slides .slide-4 {
+    background-image: url(http://i.imgur.com/P6R1Ybb.jpg);
+}
+
+.fade-carousel .slides .slide-5 {
+    background-image: url(http://i.imgur.com/FlmNF8T.jpg);
+}
+.fade-carousel .slides .slide-6 {
+    background-image: url(http://i.imgur.com/HLzA6KA.jpg);
+}
+
+
 
 /********************************/
 /*          Media Queries       */

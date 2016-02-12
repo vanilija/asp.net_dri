@@ -56,11 +56,11 @@
     <WarningLevel>4</WarningLevel>
     <PublishDatabaseSettings>
       <Objects>
-        <ObjectGroup Name="DefaultConnection-Deployment" Order="1" xmlns="">
-          <Destination Path="Data Source=drinago.database.windows.net%3bInitial Catalog=Users%3bUser ID=drinagoadmin%3bPassword=Digitalni2k%3bEncrypt=True" />
-          <Object Type="DbFullSql">
-            <PreSource Path="Driver={SQL Server Native Client 11.0}%3bServer=tcp:drinago.database.windows.net,1433%3bDatabase=Users%3bUid=drinagoadmin%40drinago%3bPwd={Digitalni2k}%3bEncrypt=yes%3bTrustServerCertificate=no%3bConnection Timeout=30%3b" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
-            <Source Path="obj\Release\AutoScripts\DefaultConnection-Deployment_SchemaOnly.sql" Transacted="True" />
+        <ObjectGroup Name="Users-Deployment" Order="1" xmlns="">
+          <Destination Path="Data Source=drinago.database.windows.net%3bInitial Catalog=Users%3bUser ID=drinagoadmin%3bPassword=Digitalni2k" />
+          <Object Type="DbFullSql" Enabled="False">
+            <PreSource Path="Data Source=drinago.database.windows.net%3bInitial Catalog=Users%3bUser ID=drinagoadmin%3bPassword=Digitalni2k%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Release\AutoScripts\Users-Deployment_SchemaOnly.sql" Transacted="True" />
           </Object>
         </ObjectGroup>
       </Objects>
@@ -245,7 +245,9 @@
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
