@@ -75,5 +75,20 @@ namespace Drinago.Controllers
         {
             return View();
         }
+
+        public ActionResult Archeology()
+        { 
+            return View();
+        }
+
+        public ActionResult Geography()
+        {
+            return View();
+        }
+
+        public ActionResult History()
+        {
+            return View();
+        }
     }
 }

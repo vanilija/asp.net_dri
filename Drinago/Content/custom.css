@@ -26,7 +26,7 @@ a {
 }
 
 body {
-    background-color: #E3F2FD;
+    background-color: orange; /* #E3F2FD; */
     font-family: 'Roboto', sans-serif;
     margin: 10px;
 }
