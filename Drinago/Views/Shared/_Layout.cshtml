@@ -59,33 +59,35 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Welcome", "Index", "Home")</li>
+                    <!-- Dropdowm menu -->
                     <li class="dropdown">
                         <a href="http://drinago.azurewebsites.net/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Info<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Basic Info", "Info", "Home")</li>
-                            <li>@Html.ActionLink("Geology", "Geology", "Home")</li>
-                            <li>@Html.ActionLink("Archeology", "Archeology", "Home")</a></li>
+                            <li>@Html.ActionLink("Basic Info", "Info", "Info")</li>
+                            <li>@Html.ActionLink("Geology", "Geology", "Info")</li>
+                            <li>@Html.ActionLink("Archeology", "Archeology", "Info")</li>
                             <li role="separator" class="divider"></li>
-                            <li>@Html.ActionLink("History", "History", "Home")</li>
+                            <li>@Html.ActionLink("History", "History", "Info")</li>
                             <li role="separator" class="divider"></li>
-                            <li>@Html.ActionLink("Geography", "Geography", "Home")</li>
+                            <li>@Html.ActionLink("Geography", "Geography", "Info")</li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="http://drinago.azurewebsites.net/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                       Explore<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Where to stay", "WhereToStay", "Home")</li>
-                            <li>@Html.ActionLink("Where to eat", "WhereToEat", "Home")</li>
-                            <li>@Html.ActionLink("Where to shop", "WhereToShop", "Home")</li>
+                            <li>@Html.ActionLink("Where to stay", "WhereToStay", "Explore")</li>
+                            <li>@Html.ActionLink("Where to eat", "WhereToEat", "Explore")</li>
+                            <li>@Html.ActionLink("Where to shop", "WhereToShop", "Explore")</li>
                             <li role="separator" class="divider"></li>
-                            <li>@Html.ActionLink("What to see", "WhatToSee", "Home")</li>
+                            <li>@Html.ActionLink("What to see", "WhatToSee", "Explore")</li>
                             <li role="separator" class="divider"></li>
-                            <li>@Html.ActionLink("What to do", "WhatToDo", "Home")</li>
+                            <li>@Html.ActionLink("What to do", "WhatToDo", "Explore")</li>
                         </ul>
                     </li>
+                    <!-- End of dropdown menu-->
                     <li>@Html.ActionLink("Maps & Guides", "Transportation", "Home")</li>
                     <li>@Html.ActionLink("About us", "About", "Home")</li>
                 </ul>
