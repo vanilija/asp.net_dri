@@ -8,7 +8,7 @@
     padding-right: 1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
-    font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
     color: black;
 }
 
@@ -27,7 +27,7 @@ a {
 
 body {
     background-color: orange; /* #E3F2FD; */
-    font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
     margin: 10px;
 }
 
@@ -93,7 +93,7 @@ fade-carousel .carousel-indicators > li {
     -ms-transform: translate3d(-50%,-50%,0);
     -o-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
-    font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
 }
 
     .hero h1 {
@@ -101,7 +101,7 @@ fade-carousel .carousel-indicators > li {
         font-weight: bold;
         margin: 0;
         padding: 0;
-        font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
     }
 
 .fade-carousel .carousel-inner .item .hero {
@@ -150,11 +150,11 @@ fade-carousel .carousel-indicators > li {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
+   /* -webkit-filter: blur(0.2px);
+    -moz-filter: blur(0.2px);
+    -o-filter: blur(0.2px);
+    -ms-filter: blur(0.2px);
+    filter: blur(0.2px); */
 }
 
 .fade-carousel .slides .slide-1 {
@@ -193,13 +193,13 @@ fade-carousel .carousel-indicators > li {
 @media screen and (max-width: 640px) {
     .hero h1 {
         font-size: 3.5em;
-        font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
         color: white;
     }
 
     .hero h3 {
         font-size: 1.3em;
-        font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
         color: white;
     }
 }
