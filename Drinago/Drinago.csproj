@@ -250,6 +250,9 @@
     <Content Include="Views\Account\VerifyCode.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <None Include="Views\Home\ThingsToDo.cshtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
