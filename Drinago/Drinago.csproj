@@ -58,9 +58,8 @@
       <Objects>
         <ObjectGroup Name="Users-Deployment" Order="1" xmlns="">
           <Destination Path="Data Source=drinago.database.windows.net%3bInitial Catalog=Users%3bUser ID=drinagoadmin%3bPassword=Digitalni2k" />
-          <Object Type="DbFullSql" Enabled="False">
-            <PreSource Path="Data Source=drinago.database.windows.net%3bInitial Catalog=Users%3bUser ID=drinagoadmin%3bPassword=Digitalni2k%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
-            <Source Path="obj\Release\AutoScripts\Users-Deployment_SchemaOnly.sql" Transacted="True" />
+          <Object Type="DbFullSql">
+            <Source Path="Scripts\testscript.sql" Transacted="False" />
           </Object>
         </ObjectGroup>
       </Objects>
@@ -238,6 +237,18 @@
     <Content Include="Views\Info\Archeology.cshtml" />
     <Content Include="Views\Info\History.cshtml" />
     <Content Include="Views\Info\Geography.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <None Include="Views\Home\ThingsToDo.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -248,9 +259,6 @@
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
@@ -273,9 +281,16 @@
     <Content Include="Views\Explore\WhatToSee.cshtml" />
     <Content Include="Views\Explore\WhatToDo.cshtml" />
     <Content Include="Views\Info\Geology.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

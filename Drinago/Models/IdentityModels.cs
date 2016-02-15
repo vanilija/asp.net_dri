@@ -20,8 +20,10 @@ namespace Drinago.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        /*Baza Podataka config, patnja ziva da nadjem i da promjenim sa defaulta na ime baze podataka, facepalm!*/
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("Users", throwIfV1Schema: false)
         {
         }
 
