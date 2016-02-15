@@ -212,6 +212,5 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 
-#Database
-
-*Web.config
+#Database config
+Drinago/Web.config
