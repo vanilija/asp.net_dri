@@ -18,10 +18,11 @@ namespace Drinago.Models
         }
     }
 
+    /*Baza Podataka config, patnja ziva da nadjem i da promjenim sa defaulta na ime baze podataka, facepalm!*/
+    /*Trenutno klasa AplicationDbContext je vezana za bazu podataka pod nazivom Users*/
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-
-        /*Baza Podataka config, patnja ziva da nadjem i da promjenim sa defaulta na ime baze podataka, facepalm!*/
         public ApplicationDbContext()
             : base("Users", throwIfV1Schema: false)
         {
