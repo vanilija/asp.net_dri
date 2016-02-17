@@ -1,44 +1,30 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="Drinago.Feedback" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="Drinago.Views.Home.Feedback" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        #TextArea1 {
+            width: 1273px;
+            height: 370px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-    
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <asp:TextBox ID="TextBox1" runat="server" Width="276px"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Send" />
-        <br />
-        <br />
-        <asp:GridView ID="GridView1" runat="server" Width="336px">
-        </asp:GridView>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-    
+    <h2 align="center">Please, leave your feedback here.</h2>
     </div>
     </form>
+    <p>
+        <textarea id="TextArea1" name="S1"></textarea></p>
+    <p>
+        Your feedback will help us add or resolve issues around the website.
+        I am just a feedback form, i am not pretty though.
+
+        I dont have any styling applied either. This is just for testing purposes.
+    </p>
 </body>
 </html>
