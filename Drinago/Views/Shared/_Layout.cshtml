@@ -58,11 +58,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Welcome", "Index", "Home")</li>
+                   <!--<li>@Html.ActionLink("Welcome", "Index", "Home")</li>-->
                     <!-- Dropdowm menu -->
                     <li class="dropdown">
                         <a href="http://drinago.azurewebsites.net/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Info<span class="caret"></span>
+                            Welcome<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Basic Info", "Info", "Info")</li>
@@ -87,8 +87,17 @@
                             <li>@Html.ActionLink("What to do", "WhatToDo", "Explore")</li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="http://drinago.azurewebsites.net/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Maps & Guides<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Getting Destination", "Transportation", "Home")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Seasons", "Transportation", "Home")</li>
+                        </ul>
+                    </li>
                     <!-- End of dropdown menu-->
-                    <li>@Html.ActionLink("Maps & Guides", "Transportation", "Home")</li>
                     <li>@Html.ActionLink("About us", "About", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -105,7 +114,7 @@
                 <div class="col-md-4 footer-left">
                     <br />
                     <ul class="list-inline">
-                        <li>@Html.ActionLink("Welcome", "Home", "Home")</li>
+                        <!--<li>@Html.ActionLink("Welcome", "Home", "Home")</li>-->
                         <li>@Html.ActionLink("Info", "Info", "Home")</li>
                         <li>@Html.ActionLink("Maps & Guides", "Transportation", "Home")</li>
                         <li>@Html.ActionLink("About", "About", "Home")</li>
