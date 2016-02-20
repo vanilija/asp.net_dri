@@ -37,26 +37,6 @@ namespace Drinago.Controllers
         {
             return View();
         }
-  
-        public ActionResult Geology()
-        {
-            return View();
-        }
-
-        public ActionResult Archeology()
-        { 
-            return View();
-        }
-
-        public ActionResult Geography()
-        {
-            return View();
-        }
-
-        public ActionResult History()
-        {
-            return View();
-        }
 
         public ActionResult Feedback()
         {

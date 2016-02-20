@@ -1,0 +1,119 @@
+﻿<!-- C# Code -->
+@{
+    ViewBag.Title = "Seasons";
+}
+
+@{
+    ViewBag.Message = "Spring";
+    ViewBag.Message2 = "Summer";
+    ViewBag.Message3 = "Fall";
+    ViewBag.Message4 = "Winter";
+}
+
+<!-- End of C# code -->
+<!-- ======== CAROUSEL =========-->
+<body class="indexsadrzaj">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+        <!-- Indicators -->
+
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1 class="white">Seasons</h1>
+                        <h3 class="white">Activities during seasons</h3>
+                    </hgroup>
+                    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/About" method="get">
+                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1 class="white">Explore</h1>
+                        <h3 class="white">Explore region of Drinago with our help</h3>
+                    </hgroup>
+                    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/About" method="get">
+                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1 class="white">Things to do</h1>
+                        <h3 class="white">Click on the Maps & Guides, to learn more</h3>
+                    </hgroup>
+                    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/About" method="get">
+                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========= END OF CAROUSEL ========== -->
+    <!-- ========== ROW ONE ========== -->
+
+    <div class="SadrzajIndex">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 align="center">@ViewBag.Message</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">@ViewBag.Message2</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                        <br />
+                      
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">@ViewBag.Message3</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                        <br />
+                        
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">@ViewBag.Message4</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                        <br />
+
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Info">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- ========== END OF ROW ONE ========== -->
+<!-- End of Seasons.cshtml code -->

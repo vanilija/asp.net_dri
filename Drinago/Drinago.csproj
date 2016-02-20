@@ -197,6 +197,7 @@
     <Compile Include="Controllers\InfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TravelController.cs" />
     <Compile Include="database_firewall_rules.cs" />
     <Compile Include="Feedback.aspx.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
@@ -285,7 +286,7 @@
     <Content Include="Views\Home\Maps.cshtml" />
     <Content Include="Views\Home\SportsAndRecreations.cshtml" />
     <Content Include="Views\Home\Tours.cshtml" />
-    <Content Include="Views\Home\Transportation.cshtml" />
+    <Content Include="Views\Travel\Transportation.cshtml" />
     <Content Include="Views\Home\FoodAndDrink.cshtml" />
     <Content Include="Views\Explore\WhereToShop.cshtml" />
     <Content Include="Views\Explore\WhereToEat.cshtml" />
@@ -298,6 +299,7 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Travel\Seasons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
