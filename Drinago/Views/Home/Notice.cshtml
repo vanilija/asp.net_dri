@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Notice";
+
+}
+
+@{
+    ViewBag.Message = "General Notice";
+}
+
+<!-- ======== CAROUSEL =========-->
+<body class="aboutsadrzaj">
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-2"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1 class="white">Alpha notice</h1>
+                </hgroup>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== END OF CAROUSEL ========== -->
+
+<!-- ========== Notice ========== -->
+
+<div class="section1">
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <h3>@ViewBag.Message</h3>
+        <hr />
+        <p align="justify">
+            This is an early alpha stage of the website. 
+            We have chosen to build our website using ASP.NET MVC. 
+            Please, any errors you may encounter, let me know at: test@test.com, thanks! 
+            This website uses bootstrap framework, which means that it's responsive out of the box, so you can use it on any device you want. 
+            This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. <br />
+            The point of the website is to introduce tourists to the town of Gorazde, people of Gorazde, culture of Gorazde and so forth.
+        </p>
+    </div>
+</div>
+<br>
+    </body>
+<style>
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        border-radius: 3px;
+    }
+
+    .aboutsadrzaj {
+        background-color: #006064;
+    }
+</style>

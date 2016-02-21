@@ -42,5 +42,10 @@ namespace Drinago.Controllers
         {
             return View("~/Views/Home/Feedback.aspx");
         }
+
+        public ActionResult Notice()
+        {
+            return View("~/Views/Home/Notice.cshtml");
+        }
     }
 }

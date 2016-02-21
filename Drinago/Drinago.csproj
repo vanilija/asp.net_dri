@@ -258,6 +258,7 @@
     <Content Include="Views\Account\SendCode.cshtml" />
     <Content Include="Views\Account\VerifyCode.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Home\Notice.cshtml" />
     <None Include="Views\Home\ThingsToDo.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
