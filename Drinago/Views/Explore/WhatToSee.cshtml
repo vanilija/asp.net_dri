@@ -1,10 +1,13 @@
 ﻿@{
-    ViewBag.Title = "About Drinago";
+    ViewBag.Title = "What to see";
 
 }
 
 @{ 
     ViewBag.Message = "What to See";
+    ViewBag.Message1 = "Goršić Polje";
+    ViewBag.Message2 = "War Memorial - Rorovi";
+    ViewBag.Message3 = "Roman Bridge";
 
 }
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
@@ -23,7 +26,6 @@
                 <hgroup>
                     <h1 class="white">What to see</h1>
                     <h3 class="white">Interesting places around Drinago</h3>
-                    <h5>Click on Learn more, for more information</h5>
                 </hgroup>
                 <button class="btn btn-hero btn-lg" role="button">Learn more</button>
             </div>
@@ -56,15 +58,121 @@
 
 <!-- ========== What to see ========== -->
 
-<div class="section1">
-    <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <h3>@ViewBag.Message</h3>
-        <hr />
-        <p align="justify">
-        </p>
+<div class="sadrzaj">
+    <h3>@ViewBag.Message</h3>
+    <hr />
+    <h4>Idea for showing place to stay, goes like this, text below is just an example:</h4>
+    <p>
+        Add info below for certain areas.
+        <ul>
+            <li>Include working hours, does it have WIFI etc.</li>
+            <li>Include few pictures, or just one, then when users click on Learn more button, take them to a new page with more detailed information about the place.</li>
+        </ul>
+    </p>
+    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Notice" method="get">
+        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+    </form>
+</div>
+<br />
+<div class="fontvelicina">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message1</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/kNozhBs.jpg" />
+                    <br />
+                    
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message2</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message3</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message4</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                   
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message5</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message6</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message7</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">@ViewBag.Message8</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                   
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+        </div>
     </div>
 </div>
-<hr>
 
 <style>
     .section1,
