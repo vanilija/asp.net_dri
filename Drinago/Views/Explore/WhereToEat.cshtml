@@ -2,14 +2,15 @@
     ViewBag.Title = "Where to eat";
 
 }
-@{ 
-    ViewBag.Message = "Food and Drink";
-    ViewBag.Message1 = "Hotel Behar";
-    ViewBag.Message2 = "Casablanca";
-    ViewBag.Message3 = "Monza 2";
-    ViewBag.Message4 = "Zute Dunje";
-    ViewBag.Message5 = "Ciro";
-    ViewBag.Message6 = "";
+@{
+    ViewBag.Message = "Notice";
+    ViewBag.Message1 = "Barbeque Restaurants";
+    ViewBag.Message2 = "Buffet Restaurants";
+    ViewBag.Message3 = "Fast casual Restaurants";
+    ViewBag.Message4 = "Fast food Restaurants";
+    ViewBag.Message4 = "Slow food Restaurants";
+    ViewBag.Message5 = "Cafés‎";
+    ViewBag.Message6 = "Pizzerias";
 }
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
     <div class="carousel-inner">
@@ -28,18 +29,543 @@
 
 <!-- ========== Where to eat ========== -->
 
-<div class="section1">
-    <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <h3>@ViewBag.Message</h3>
-        <hr />
-        <p align="justify">
-            
-        </p>
+<div class="sadrzaj">
+    <h3>@ViewBag.Message</h3>
+    <hr />
+    <h4>Answer the following questions about the places below></h4>
+    <p>
+        <ul>
+            <li>What type of cuisine?</li>
+            <li>What food do they serve?</li>
+            <li>How much money you need to pay for food?</li>
+            <li>Do they serve breakfast, lunch, dinner?</li>
+            <li>Include the amount of seats, include the menu, do they have specials?</li>
+            <li>Include working hours, does it have WIFI etc.</li>
+            <li>Include few pictures, or just one, then when users click on Learn more button, take them to a new page with more detailed information about the place.</li>
+            <li>Local community location?</li>
+        </ul>
+
+        Please note that Barbeque, Buffet, Fast-casual, Fast food are types of restaurants.
+    </p>
+    <form style="display: inline" action="http://drinago.azurewebsites.net/Home/Notice" method="get">
+        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
+    </form>
+</div>
+<br />
+<!-- ###################################################################### -->
+<!-- Klasifikacija -->
+<div class="naziv">
+    <h3 class="bojaslova" align="center">@ViewBag.Message1</h3>
+</div>
+<!-- Kraj klasifikacije -->
+<!-- ###################################################################### -->
+<br />
+<div class="fontvelicina">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- ###################################################################### -->
+    <!-- Klasifikacija -->
+    <div class="naziv">
+        <h3 class="bojaslova" align="center">@ViewBag.Message2</h3>
+    </div>
+    <!-- Kraj klasifikacije -->
+    <!-- ###################################################################### -->
+    <br />
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+        </div>
     </div>
 </div>
-<hr>
+<br />
+<!-- ###################################################################### -->
+<!-- Klasifikacija -->
+<div class="naziv">
+    <h3 class="bojaslova" align="center">@ViewBag.Message3</h3>
+</div>
+<!-- Kraj klasifikacije -->
+<!-- ###################################################################### -->
+<br />
+<div class="fontvelicina">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- ###################################################################### -->
+    <!-- Klasifikacija -->
+    <div class="naziv">
+        <h3 class="bojaslova" align="center">@ViewBag.Message4</h3>
+    </div>
+    <!-- Kraj klasifikacije -->
+    <!-- ###################################################################### -->
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<!-- ###################################################################### -->
+<!-- Klasifikacija -->
+<div class="naziv">
+    <h3 class="bojaslova" align="center">@ViewBag.Message5</h3>
+</div>
+<!-- Kraj klasifikacije -->
+<!-- ###################################################################### -->
+<br />
+<div class="fontvelicina">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+            </div>
+            <div class="col-md-3">
+                <h4 align="center">Naziv</h4>
+                <hr />
+                <p align="justify">
+                    <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                    <br />
+                    How many rooms does it have?
+                    How much money does it cost to rent a room for a night, two, three?
+                    Do they serve breakfast, lunch, dinner?
+                    Include the amount of seats, include the menu, do they have specials?
+                    Include working hours, does it have WIFI etc.
+                    <br />
+                </p>
+                <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="fontvelicina">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 align="center">Naziv</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">Naziv</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">Naziv</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">Naziv</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+       </div>
+    <br />
+    <!-- ###################################################################### -->
+    <!-- Klasifikacija -->
+    <div class="naziv">
+        <h3 class="bojaslova" align="center">@ViewBag.Message6</h3>
+    </div>
+    <!-- Kraj klasifikacije -->
+    <!-- ###################################################################### -->
+    <br />
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 align="center">Picollo</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">Monza II</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">Monza</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/">Learn more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 align="center">Corner Doner</h4>
+                    <hr />
+                    <p align="justify">
+                        <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
+                        <br />
+                        How many rooms does it have?
+                        How much money does it cost to rent a room for a night, two, three?
+                        Do they serve breakfast, lunch, dinner?
+                        Include the amount of seats, include the menu, do they have specials?
+                        Include working hours, does it have WIFI etc.
+                        <br />
+                    </p>
+                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <style>
-   .section1,
+    .section1,
     .section2,
     .section3,
     .section4 {
@@ -51,4 +577,8 @@
         padding-bottom: 0.1em;
         border-radius: 3px;
     }
-   </style>
+
+    .bojaslova {
+        color: blue;
+    }
+</style>
