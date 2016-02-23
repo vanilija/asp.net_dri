@@ -28,21 +28,6 @@ namespace Drinago.Controllers
             return View();
         }
 
-        public ActionResult WhereTo()
-        {
-            return View();
-        }
-
-        public ActionResult FoodAndDrink()
-        {
-            return View();
-        }
-
-        public ActionResult Feedback()
-        {
-            return View("~/Views/Home/Feedback.aspx");
-        }
-
         public ActionResult Notice()
         {
             return View("~/Views/Home/Notice.cshtml");
