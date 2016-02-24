@@ -32,5 +32,5 @@ namespace Drinago.Controllers
         {
             return View("~/Views/Home/Notice.cshtml");
         }
-    }
+}
 }

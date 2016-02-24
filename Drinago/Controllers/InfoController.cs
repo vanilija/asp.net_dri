@@ -25,9 +25,12 @@ namespace Drinago.Controllers
 
         public ActionResult History()
         {
-            return View("~/Views/Info/History.cshtml");
-        }
+            //return View("~/Views/Info/History.cshtml");
+            HistoryContext db = new HistoryContext();
 
+            return View(db.Sadrzajs.ToList());
+        }
+   
         public ActionResult Geography()
         {
             return View("~/Views/Info/Geography.cshtml");

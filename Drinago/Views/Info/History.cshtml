@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Drinago.Sadrzaj>
+@{
     ViewBag.Title = "History documents";
 }
 
@@ -7,14 +8,11 @@
 
 }
 
-<!-- ========== SADRZAJ in CSS is created for material design purpose only ========== -->
-
 <!-- ======== CAROUSEL =========-->
 
 <body class="infosadrzaj">
     <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-       
-        <!-- Wrapper for slides -->
+
         <div class="carousel-inner">
             <div class="item slides active">
                 <div class="slide-1"></div>
@@ -27,58 +25,44 @@
             <div class="item slides">
                 <div class="slide-2"></div>
                 <div class="hero">
-                    <hgroup>
-                    </hgroup>
+                    <hgroup></hgroup>
                 </div>
             </div>
             <div class="item slides">
                 <div class="slide-3"></div>
                 <div class="hero">
-                    <hgroup>
-                    </hgroup>
+                    <hgroup></hgroup>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ========= END OF CAROUSEL ========== -->
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message</h3>
+        <h2>@ViewBag.Message</h2>
+        <h4>Short Notice</h4>
+        <p>For now, this text area is in Bosnian. We are in the translating process.</p>
         <hr />
-        <p align="justify">
-            U bližoj okolini grada pronađeni su prahistorijski nalazi, koji potječu od mlađeg kamenog doba (neolit) oko 2300 godina prije naše ere.
-            Nakon ovog perioda, ovaj kraj naseljavaju <b>Iliri,</b> koji su oko 3 stoljeća p.n.e imali svoju državu. Iz rimskog perioda, pronađeni su
-            antički spomenici u Gornjem Podrinju, dok su u bližoj okolini Goražda pronađeni sarkofazi. U ovom periodu izgrađeni su putevi ka Jadranskom moru.
-            U VI i VII stoljeću na ove prostore dolaze Slaveni. Na mjestu današnjeg grada 1220. godine postojalo je mjesto zvano Vasa.
-            Od 1376 godine ovim područjem vlada bosanski ban Tvrtko. U tom periodu, kao i ranije, mjesto ima trgovački značaj budući da je na karavanskom putu za Dubrovnik (1379).
-            Poslije Banove smrti (1391.) njegova se država dijeli. Gornjim podrinjem upravljaju humske vojvode iz porodice Hranića (Kosača),
-            od kojih je najpoznatiji bio Sandalj. Živjeli su u dvorcu Samobor, nedaleko od Goražda. Nasljednik Sandalja bio je njegov bratić Stjepan, koji uzima titulu hercega.
-            Mlađi brat Herceg Stjepana, zbog porodičnih nesuglasica odlazi u Tursku, odakle se javlja 1474. godine sa visokog državničkog
-            položaja Turske kao Ahmed Hercegović. 
-        </p>
+        <!-- Podaci iz Baze -->
+        @foreach (var item in Model)
+        {
+        <!-- Trazi podatke iz column History1 -->
+            @Html.DisplayFor(modelItem => item.History1)
+            <hr />
+        <!-- Trazi podatke iz column History2 -->
+            @Html.DisplayFor(modelItem => item.History2)
+            <hr />
+        }
+        <!-- Kraj podataka iz Baze -->
     </div>
-    <div class="sadrzaj">
-        <p align="justify">
-           <br />
-          Prvi podaci o Goraždu potječu od 1404. godine.
-          U okolini Goražda postoji nekoliko nalazišta srednjovjekovnih spomenika, stećaka (Ilovača, Međurječje).
-          Godine 1465. Turci zauzimaju Samobor, Goražde i Foču. Kasnije će Foča postati sjedište hercegovačkog sandžaka.
-          Prvi <b>kameni most</b> na rijeci Drini gradi Mustafa beg Sokolović 1550 - 1557 u Goraždu kao zadužbinu.
-          Godine 1725. Goražde zahvata veliki požar nanoseći velike štete.
-          Okupacijom Bosne i Hercegovine 1878. godine, Goražde pod austrijskom vlašću postaje strateško mjesto.
-          Izgrađuju se objekti za garnizon, koji broji 709 vojnika (1910). Ovaj garnizon obezbjeđuje granice prema
-          Srbiji i Crnog Gori. Strateški ciljevi određuju novoj vlasti izgradnju nove ceste ka Foči i Čajniču. Granica je na Metaljci.
-        </p>
-    </div>
-   <br />
 </body>
 
+<!--In line styling because i am lazy -->
 <style>
     .infosadrzaj {
         background-color: orange; /*#cddc39;*/
-        
     }
 
-  
+    div {
+        text-align: justify;
+    }
 </style>
