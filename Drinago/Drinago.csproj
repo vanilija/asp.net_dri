@@ -253,6 +253,7 @@
     <Content Include="HistoryModel.edmx.diagram">
       <DependentUpon>HistoryModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\amazon.pubxml" />
     <None Include="Properties\PublishProfiles\drinago.pubxml">
       <SubType>Designer</SubType>
     </None>
