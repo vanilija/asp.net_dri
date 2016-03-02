@@ -23,32 +23,17 @@
         <hr />
         <p align="justify">
             
-        </p>
-    </div>
-    <br />
-    <div class="sadrzaj">
-        <p>
-            
-        </p>
-    </div>
-    <br />
-    <div class="sadrzaj">
-        <p>
-            
-        </p>
-    </div>
-    <br />
-    <div class="sadrzaj">
-        <p>
-           
-        </p>
-    </div>
-    <br />
-    <div class="sadrzaj">
-        <p>
-           
-        </p>
-    </div>
+            <!-- Data from Database -->
+            @foreach (var item in Model)
+            {
+        <!-- Look for data from column Geography1 -->
+                @Html.DisplayFor(modelItem => item.Geography1)
+                <hr />
+        <!-- Look for data in Geography2 -->
+                @Html.DisplayFor(modelItem => item.Geography2)
+                <hr />
+            }
+            </div>
 </body>
 
 <style>
